@@ -17,21 +17,20 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <RelativeLayout
+          <RelativeLayout
                 android:elevation="1dp"
                 android:id="@+id/layout_userinfo"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:background="@color/colorPrimary"
                 >
-                <!--android:background="@drawable/bg_userinfo"-->
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/iv_usercover"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="30dp"
-                    android:src="@drawable/zz"
+                    android:src="@mipmap/ic_launcher"
                     app:civ_border_color="@color/colorPrimaryDark"
                     app:civ_border_width="2dp" />
 

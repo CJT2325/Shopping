@@ -5,9 +5,97 @@
     tools:context="com.cjt.shopping.fragment.EvaluateFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="evaluate fragment" />
+        android:background="#e7e7e7">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layout_evaluateinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="130dp"
+                    android:layout_height="100dp">
+
+
+                    <TextView
+                        android:id="@+id/tv_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="6dp"
+                        android:text="4.7"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="40dp" />
+
+                    <TextView
+                        android:id="@+id/tv_scoreinfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_score"
+                        android:layout_centerHorizontal="true"
+                        android:text="综合评分"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/tv_goodevaluate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_scoreinfo"
+                        android:layout_centerHorizontal="true"
+                        android:text="商家好评率78%"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#DDD" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_sendscore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="23dp"
+                        android:text="配送评分" />
+
+                    <TextView
+                        android:id="@+id/tv_traderscore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="23dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="商家评分" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_evaluatelist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_evaluateinfo">
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </ScrollView>
 
 </FrameLayout>

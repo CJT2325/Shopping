@@ -2,12 +2,229 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e7e7e7"
     tools:context="com.cjt.shopping.fragment.EvaluateFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
+        android:background="#e7e7e7"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="shopinfo fragment" />
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/layout_menu1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_pock"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/iv_menu1"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_margin="9dp"
+                    android:src="@android:drawable/ic_menu_call"
+                    android:tint="#BBBBBB" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_menu1"
+                    android:text="18814117978"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="9dp"
+                    android:src="@android:drawable/ic_menu_call"
+                    android:tint="@color/colorPrimary" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="20dp"
+                android:background="#CCCCCC" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/iv_menu2"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_margin="9dp"
+                    android:src="@drawable/ic_room_white_24dp"
+                    android:tint="#BBBBBB" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_menu2"
+                    android:text="广州大学华软软件学院"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="9dp"
+                    android:src="@drawable/ic_chevron_right_black_24dp"
+                    android:tint="#BBBBBB" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/iv_menu3"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_margin="9dp"
+                    android:src="@android:drawable/ic_menu_call"
+                    android:tint="#BBBBBB" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_menu3"
+                    android:text="配送时间：09:00-14:30,17:00-20:30"
+                    android:textSize="16dp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="20dp"
+                android:background="#CCCCCC" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/iv_menu4"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_margin="9dp"
+                    android:src="@drawable/ic_room_white_24dp"
+                    android:tint="#BBBBBB" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_menu4"
+                    android:text="配送服务：由 商家 提供配送服务"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/iv_menu5"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_margin="9dp"
+                    android:src="@drawable/ic_room_white_24dp"
+                    android:tint="#BBBBBB" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_menu5"
+                    android:text="满减优惠"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="20dp"
+                android:background="#CCCCCC" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/iv_menu6"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_margin="9dp"
+                    android:src="@drawable/ic_room_white_24dp"
+                    android:tint="#BBBBBB" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_menu6"
+                    android:text="该商家支持在线支付"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#FFFFFF">
+
+
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_menu7"
+                    android:text="举报商家"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/iv_menu7_1"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="9dp"
+                    android:src="@drawable/ic_chevron_right_black_24dp"
+                    android:tint="#BBBBBB" />
+
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/iv_menu7_1"
+                    android:text="举报商家作弊领红包"
+                    android:textColor="#FF0000"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
 
 </FrameLayout>

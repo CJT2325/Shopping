@@ -16,7 +16,7 @@ import java.util.List;
  * 作者: 陈嘉桐 on 2016/6/12
  * 邮箱: 445263848@qq.com.
  */
-public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHolder> {
+public class OrderAdapter extends RecyclerView.Adapter<OrderViewHolder> {
     private Context mContext;
     private List datas;
 
@@ -26,13 +26,13 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
     }
 
     @Override
-    public OrderAdapter.OrderViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public OrderViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view= LayoutInflater.from(mContext).inflate(R.layout.order_item,parent,false);
         return new OrderViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(OrderAdapter.OrderViewHolder holder, int position) {
+    public void onBindViewHolder(OrderViewHolder holder, int position) {
 
     }
 
@@ -41,23 +41,24 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
         return datas.size();
     }
 
-    class OrderViewHolder extends RecyclerView.ViewHolder {
-        ImageView iv_shopcover;
-        TextView tv_shopname;
-        TextView tv_evaluate;
-        TextView tv_price;
-        TextView tv_ordertime;
-        TextView tv_describe;
 
-        public OrderViewHolder(View itemView) {
-            super(itemView);
-            iv_shopcover = (ImageView) itemView.findViewById(R.id.iv_shopcover);
-            tv_shopname = (TextView) itemView.findViewById(R.id.tv_shopname);
-            tv_evaluate = (TextView) itemView.findViewById(R.id.tv_evaluate);
-            tv_price = (TextView) itemView.findViewById(R.id.tv_price);
-            tv_ordertime = (TextView) itemView.findViewById(R.id.tv_ordertime);
-            tv_describe = (TextView) itemView.findViewById(R.id.tv_describe);
-        }
+}
+class OrderViewHolder extends RecyclerView.ViewHolder {
+    ImageView iv_shopcover;
+    TextView tv_shopname;
+    TextView tv_evaluate;
+    TextView tv_price;
+    TextView tv_ordertime;
+    TextView tv_describe;
+
+    public OrderViewHolder(View itemView) {
+        super(itemView);
+        iv_shopcover = (ImageView) itemView.findViewById(R.id.iv_shopcover);
+        tv_shopname = (TextView) itemView.findViewById(R.id.tv_shopname);
+        tv_evaluate = (TextView) itemView.findViewById(R.id.tv_evaluate);
+        tv_price = (TextView) itemView.findViewById(R.id.tv_price);
+        tv_ordertime = (TextView) itemView.findViewById(R.id.tv_ordertime);
+        tv_describe = (TextView) itemView.findViewById(R.id.tv_describe);
     }
 }
 
