@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:layout_marginTop="8dp"
+    android:elevation="1dp">
+
+    <RelativeLayout
+        android:id="@+id/layout_shopinfo"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:id="@+id/iv_shopcover"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="6dp"
+            android:background="#767868" />
+
+        <TextView
+            android:id="@+id/tv_shopname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/iv_shopcover"
+            android:text="商店名称"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="6dp"
+            android:text="888m" />
+
+        <TextView
+            android:id="@+id/tv_startprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_shopcover"
+            android:layout_toRightOf="@id/iv_shopcover"
+            android:text="起送价￥10" />
+
+        <TextView
+            android:id="@+id/tv_giveprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_shopcover"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/tv_startprice"
+            android:text="配送费￥0" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_distance"
+            android:layout_marginRight="6dp"
+            android:text="31分钟" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_shopinfo">
+
+        <TextView
+            android:id="@+id/tv_space"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="126dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="6dp"
+            android:background="#CCCCCC" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_space"
+            android:layout_marginLeft="126dp"
+            android:orientation="vertical"
+            android:paddingBottom="6dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="满减优惠" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

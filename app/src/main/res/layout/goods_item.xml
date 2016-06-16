@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    android:layout_marginBottom="1dp"
+    android:elevation="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:background="#999999"
+        android:id="@+id/iv_goodscover"
+        android:layout_margin="8dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/iv_goodscover"
+        android:id="@+id/tv_goodsname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的天空"
+        android:textSize="17sp" />
+    <TextView
+        android:id="@+id/tv_sale"
+        android:layout_below="@id/tv_goodsname"
+        android:layout_toRightOf="@id/iv_goodscover"
+        android:text="月售888"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="8dp"
+        android:layout_below="@id/tv_goodsname"
+        android:layout_toRightOf="@id/tv_sale"
+        android:text="月售888"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="6dp"
+        android:layout_below="@id/tv_sale"
+        android:layout_toRightOf="@id/iv_goodscover"
+        android:text="￥10"
+        android:textColor="#FF0000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="17sp"/>
+    <Button
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="+"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+</RelativeLayout>
