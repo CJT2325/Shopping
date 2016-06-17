@@ -19,6 +19,7 @@ import java.util.List;
 
 
 public class EvaluateFragment extends Fragment {
+    //基本控件
     private RecyclerView mRecyclerView;
     private EvaluateAdapter mEvaluateAdapter;
     private List<String> mDatas;
