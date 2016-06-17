@@ -28,6 +28,14 @@
         <activity
             android:name=".ShopDetailActivity"
             android:label="@string/title_activity_shop_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddressManageActivity"
+            android:label="@string/title_activity_address_manage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddressEditActivity"
+            android:label="@string/title_activity_address_edit"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

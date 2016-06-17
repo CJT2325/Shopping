@@ -7,9 +7,12 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 
+import com.cjt.shopping.AddressManageActivity;
 import com.cjt.shopping.R;
 import com.cjt.shopping.UserInfoActivity;
+import com.cjt.shopping.adapter.ShopAdapter;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -17,18 +20,20 @@ import de.hdodenhof.circleimageview.CircleImageView;
  * 作者: 陈嘉桐 on 2016/6/12
  * 邮箱: 445263848@qq.com.
  */
-public class MyFragment extends Fragment {
+public class MyFragment extends Fragment implements View.OnClickListener {
+    private RelativeLayout myAddress;
+
     private CircleImageView mCircleImageView;
 
-    public static MyFragment newInstance(){
-        MyFragment fragment=new MyFragment();
-        Bundle args=new Bundle();
-        args.putString("agrs1","text");
+    public static MyFragment newInstance() {
+        MyFragment fragment = new MyFragment();
+        Bundle args = new Bundle();
+        args.putString("agrs1", "text");
         fragment.setArguments(args);
         return fragment;
     }
 
-    public MyFragment(){
+    public MyFragment() {
 
     }
 
@@ -41,8 +46,10 @@ public class MyFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_my, container, false);
-        Bundle bundle=getArguments();
-        mCircleImageView= (CircleImageView) view.findViewById(R.id.iv_usercover);
+        Bundle bundle = getArguments();
+        mCircleImageView = (CircleImageView) view.findViewById(R.id.iv_usercover);
+        myAddress = (RelativeLayout) view.findViewById(R.id.layout_myaddress);
+        myAddress.setOnClickListener(this);
         mCircleImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,5 +57,13 @@ public class MyFragment extends Fragment {
             }
         });
         return view;
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.layout_myaddress:
+                startActivity(new Intent(getActivity(), AddressManageActivity.class));
+        }
     }
 }

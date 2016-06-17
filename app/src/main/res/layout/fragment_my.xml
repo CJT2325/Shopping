@@ -155,9 +155,11 @@
                 android:orientation="vertical">
 
                 <RelativeLayout
+
                     android:layout_width="match_parent"
                     android:layout_height="44dp"
-                    android:background="#FFFFFF">
+                    android:clickable="true"
+                    android:background="@drawable/click_selector">
 
                     <ImageView
                         android:id="@+id/iv_menu1"
@@ -191,9 +193,10 @@
                     android:background="#CCCCCC" />
 
                 <RelativeLayout
+                    android:clickable="true"
+                    android:background="@drawable/click_selector"
                     android:layout_width="match_parent"
-                    android:layout_height="44dp"
-                    android:background="#FFFFFF">
+                    android:layout_height="44dp">
 
                     <ImageView
                         android:id="@+id/iv_menu2"
@@ -227,9 +230,11 @@
                     android:background="#CCCCCC" />
 
                 <RelativeLayout
+                    android:id="@+id/layout_myaddress"
                     android:layout_width="match_parent"
                     android:layout_height="44dp"
-                    android:background="#FFFFFF">
+                    android:clickable="true"
+                    android:background="@drawable/click_selector">
 
                     <ImageView
                         android:id="@+id/iv_menu3"
@@ -270,7 +275,8 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="44dp"
-                    android:background="#FFFFFF">
+                    android:clickable="true"
+                    android:background="@drawable/click_selector">
 
                     <ImageView
                         android:id="@+id/iv_menu4"
@@ -306,7 +312,8 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="44dp"
-                    android:background="#FFFFFF">
+                    android:clickable="true"
+                    android:background="@drawable/click_selector">
 
                     <ImageView
                         android:id="@+id/iv_menu5"
@@ -347,7 +354,8 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="44dp"
-                    android:background="#FFFFFF">
+                    android:clickable="true"
+                    android:background="@drawable/click_selector">
 
                     <ImageView
                         android:id="@+id/iv_menu6"
@@ -383,7 +391,8 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="44dp"
-                    android:background="#FFFFFF">
+                    android:clickable="true"
+                    android:background="@drawable/click_selector">
 
                     <ImageView
                         android:id="@+id/iv_menu7"
@@ -424,7 +433,8 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="44dp"
-                    android:background="#FFFFFF">
+                    android:clickable="true"
+                    android:background="@drawable/click_selector">
 
                     <ImageView
                         android:id="@+id/iv_menu8"
@@ -466,7 +476,8 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="44dp"
-                    android:background="#FFFFFF">
+                    android:clickable="true"
+                    android:background="@drawable/click_selector">
 
                     <TextView
                         android:layout_width="wrap_content"
