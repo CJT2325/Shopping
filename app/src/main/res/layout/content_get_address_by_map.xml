@@ -5,19 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".ui.acitivity.MainActivity"
-    tools:showIn="@layout/activity_main">
-
-    <com.ashokvarma.bottomnavigation.BottomNavigationBar
-        android:id="@+id/bottom_navigation_bar"
+    tools:context="com.cjt.shopping.ui.acitivity.GetAddressByMapActivity"
+    tools:showIn="@layout/activity_get_address_by_map">
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/map"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true" />
-
-    <FrameLayout
-
-        android:id="@+id/layout_frame"
+        android:layout_height="250dp">
+    </com.amap.api.maps2d.MapView>
+    <TextView
+        android:id="@+id/tv_address"
+        android:textSize="18sp"
+        android:layout_below="@id/map"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/bottom_navigation_bar"></FrameLayout>
+        android:layout_height="wrap_content" />
 </RelativeLayout>

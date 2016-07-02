@@ -81,20 +81,24 @@
         android:background="#CCCCCC" />
 
     <Button
+        android:textColor="#FFF"
+        android:background="@drawable/orderbtn_selector"
         android:id="@+id/btn_evaluate"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:layout_alignParentRight="true"
         android:layout_below="@id/tv_space1"
         android:layout_margin="6dp"
         android:text="去评价" />
 
     <Button
+        android:textColor="#FFF"
+        android:background="@drawable/orderbtn_selector"
         android:layout_marginTop="6dp"
         android:layout_below="@id/tv_space1"
         android:layout_toLeftOf="@id/btn_evaluate"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:text="再来一单" />
 
 

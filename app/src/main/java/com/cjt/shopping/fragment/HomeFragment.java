@@ -10,10 +10,9 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.cjt.shopping.R;
-import com.cjt.shopping.ShopDetailActivity;
+import com.cjt.shopping.ui.acitivity.ShopDetailActivity;
 import com.cjt.shopping.adapter.ShopAdapter;
 
 import java.util.ArrayList;

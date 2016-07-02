@@ -1,4 +1,4 @@
-package com.cjt.shopping;
+package com.cjt.shopping.ui.acitivity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -26,6 +26,7 @@ import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.cjt.shopping.R;
 import com.squareup.picasso.Picasso;
 
 import java.io.File;

@@ -9,10 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
-import com.cjt.shopping.AddressManageActivity;
+import com.cjt.shopping.ui.acitivity.AddressManageActivity;
 import com.cjt.shopping.R;
-import com.cjt.shopping.UserInfoActivity;
-import com.cjt.shopping.adapter.ShopAdapter;
+import com.cjt.shopping.ui.acitivity.UserInfoActivity;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 

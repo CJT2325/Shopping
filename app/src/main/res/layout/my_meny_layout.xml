@@ -22,7 +22,7 @@
                 android:layout_width="26dp"
                 android:layout_height="26dp"
                 android:layout_margin="9dp"
-                android:src="@drawable/ic_room_white_24dp"
+                android:src="@drawable/ic_room_black_24dp"
                 android:tint="#BBBBBB" />
 
             <TextView
@@ -58,7 +58,7 @@
                 android:layout_width="26dp"
                 android:layout_height="26dp"
                 android:layout_margin="9dp"
-                android:src="@drawable/ic_room_white_24dp"
+                android:src="@drawable/ic_room_black_24dp"
                 android:tint="#BBBBBB" />
 
             <TextView
@@ -94,7 +94,7 @@
                 android:layout_width="26dp"
                 android:layout_height="26dp"
                 android:layout_margin="9dp"
-                android:src="@drawable/ic_room_white_24dp"
+                android:src="@drawable/ic_room_black_24dp"
                 android:tint="#BBBBBB" />
 
             <TextView
@@ -135,7 +135,7 @@
                 android:layout_width="26dp"
                 android:layout_height="26dp"
                 android:layout_margin="9dp"
-                android:src="@drawable/ic_room_white_24dp"
+                android:src="@drawable/ic_room_black_24dp"
                 android:tint="#BBBBBB" />
 
             <TextView
@@ -171,7 +171,7 @@
                 android:layout_width="26dp"
                 android:layout_height="26dp"
                 android:layout_margin="9dp"
-                android:src="@drawable/ic_room_white_24dp"
+                android:src="@drawable/ic_room_black_24dp"
                 android:tint="#BBBBBB" />
 
             <TextView
@@ -212,7 +212,7 @@
                 android:layout_width="26dp"
                 android:layout_height="26dp"
                 android:layout_margin="9dp"
-                android:src="@drawable/ic_room_white_24dp"
+                android:src="@drawable/ic_room_black_24dp"
                 android:tint="#BBBBBB" />
 
             <TextView
@@ -248,7 +248,7 @@
                 android:layout_width="26dp"
                 android:layout_height="26dp"
                 android:layout_margin="9dp"
-                android:src="@drawable/ic_room_white_24dp"
+                android:src="@drawable/ic_room_black_24dp"
                 android:tint="#BBBBBB" />
 
             <TextView
@@ -289,7 +289,7 @@
                 android:layout_width="26dp"
                 android:layout_height="26dp"
                 android:layout_margin="9dp"
-                android:src="@drawable/ic_room_white_24dp"
+                android:src="@drawable/ic_room_black_24dp"
                 android:tint="#BBBBBB" />
 
             <TextView

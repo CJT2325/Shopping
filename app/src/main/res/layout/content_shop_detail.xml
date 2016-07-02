@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.cjt.shopping.ShopDetailActivity"
+    tools:context=".ui.acitivity.ShopDetailActivity"
     tools:showIn="@layout/activity_shop_detail">
 
 
@@ -13,11 +13,11 @@
         android:id="@+id/tablayout_shop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
+        android:background="@color/colorPrimary"
         android:elevation="1dp"
-        app:tabIndicatorColor="@color/colorPrimary"
-        app:tabSelectedTextColor="@color/colorPrimary"
-        app:tabTextColor="#a3a3a3" />
+        app:tabIndicatorColor="#FFFFFF"
+        app:tabSelectedTextColor="#FFFFFF"
+        app:tabTextColor="#d1d1d1" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/vp_info"

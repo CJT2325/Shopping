@@ -1,11 +1,10 @@
-package com.cjt.shopping;
+package com.cjt.shopping.ui.acitivity;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.support.design.widget.AppBarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -16,13 +15,16 @@ import android.widget.TextView;
 
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
+import com.cjt.shopping.R;
 import com.cjt.shopping.fragment.HomeFragment;
 import com.cjt.shopping.fragment.MyFragment;
 import com.cjt.shopping.fragment.OrderFragment;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Toolbar toolbar;
+    private AppBarLayout mAppBarLayout;
     private TextView tv_address;
+    private TextView tv_order;
     private BottomNavigationBar bottomNavigationBar;
 
     private HomeFragment homeFragment;
@@ -36,7 +38,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
+        mAppBarLayout= (AppBarLayout) findViewById(R.id.layout_appbar);
         tv_address = (TextView) findViewById(R.id.tv_address);
+        tv_order = (TextView) findViewById(R.id.tv_order);
         tv_address.setOnClickListener(this);
         bottomNavigationBar = (BottomNavigationBar) findViewById(R.id.bottom_navigation_bar);
 
@@ -61,22 +65,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         if (homeFragment==null){
                             homeFragment=HomeFragment.newInstance();
                         }
-                        toolbar.setVisibility(View.VISIBLE);
+                        tv_address.setVisibility(View.VISIBLE);
+                        tv_order.setVisibility(View.GONE);
                         transaction.replace(R.id.layout_frame,homeFragment);
                         break;
                     case 1:
                         if (orderFragment==null){
                             orderFragment=OrderFragment.newInstance();
                         }
-                        toolbar.setVisibility(View.VISIBLE);
-                        tv_address.setText("订单");
+                        tv_address.setVisibility(View.GONE);
+                        tv_order.setVisibility(View.VISIBLE);
                         transaction.replace(R.id.layout_frame,orderFragment);
                         break;
                     case 2:
                         if (myFragment==null){
                             myFragment=MyFragment.newInstance();
                         }
-                        toolbar.setVisibility(View.GONE);
+                        tv_address.setVisibility(View.GONE);
+                        tv_order.setVisibility(View.GONE);
                         transaction.replace(R.id.layout_frame,myFragment);
                         break;
                 }
@@ -129,8 +135,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.tv_address:
                 Log.i("CJT", "tv_address click");
-                startActivity(new Intent(MainActivity.this,SetAddressActivity.class));
+                startActivityForResult(new Intent(MainActivity.this,SetAddressActivity.class),1234);
+//                startActivity(new Intent(MainActivity.this,SetAddressActivity.class));
                 break;
         }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        tv_address.setText(data.getStringExtra("Address"));
     }
 }

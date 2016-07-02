@@ -1,22 +1,16 @@
 package com.cjt.shopping.fragment;
 
-import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.cjt.shopping.R;
-import com.cjt.shopping.ShopDetailActivity;
 import com.cjt.shopping.adapter.GoodsAdapter;
-import com.cjt.shopping.adapter.ShopAdapter;
 import com.cjt.shopping.adapter.TypeAdapter;
 
 import java.util.ArrayList;

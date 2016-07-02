@@ -98,4 +98,5 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_address_manage">AddressManageActivity</string>
     <string name="title_activity_address_edit">AddressEditActivity</string>
+    <string name="title_activity_get_address_by_map">GetAddressByMapActivity</string>
 </resources>
