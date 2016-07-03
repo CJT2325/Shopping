@@ -8,8 +8,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.cjt.shopping.R;
+import com.cjt.shopping.fragment.view.ShopInfoView;
+import com.cjt.shopping.presenter.BasePresenter;
+import com.cjt.shopping.presenter.ShopInfoPresenter;
 
-public class ShopInfoFragment extends Fragment {
+public class ShopInfoFragment extends BaseFragment<ShopInfoFragment,ShopInfoPresenter> implements ShopInfoView{
 
     public static ShopInfoFragment newInstance() {
         ShopInfoFragment fragment = new ShopInfoFragment();
@@ -33,6 +36,11 @@ public class ShopInfoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_shoinfo, container, false);
         return view;
+    }
+
+    @Override
+    protected ShopInfoPresenter creatPresenter() {
+        return new ShopInfoPresenter(this);
     }
 
     private void initDatas() {

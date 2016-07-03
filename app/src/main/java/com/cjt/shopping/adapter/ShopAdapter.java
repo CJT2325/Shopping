@@ -9,6 +9,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.cjt.shopping.R;
+import com.cjt.shopping.bean.ShopList;
+import com.cjt.shopping.model.server.ServerAPI;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -18,14 +21,20 @@ import java.util.List;
  */
 public class ShopAdapter extends RecyclerView.Adapter<ShopViewHolder> {
     private Context mContext;
-    private List datas;
+    private List<ShopList.VendorsBean> datas;
     private OnItemClickListener listener;
+
+    public void updata(List<ShopList.VendorsBean> list) {
+        datas.clear();
+        datas=list;
+        notifyDataSetChanged();
+    }
 
     public interface OnItemClickListener {
         public void onItemClick(View view, int position);
     }
 
-    public ShopAdapter(List datas, Context mContext, OnItemClickListener listener) {
+    public ShopAdapter(List<ShopList.VendorsBean> datas, Context mContext, OnItemClickListener listener) {
         this.datas = datas;
         this.mContext = mContext;
         this.listener = listener;
@@ -39,7 +48,10 @@ public class ShopAdapter extends RecyclerView.Adapter<ShopViewHolder> {
 
     @Override
     public void onBindViewHolder(ShopViewHolder holder, int position) {
-
+        holder.tv_shopname.setText(datas.get(position).getStore().getName());
+        Picasso.with(mContext).load(ServerAPI.baseUrl+datas.get(position).getStore().getStoreImage().getShopFile().getUrl()).resize(100, 100).into(holder.iv_shopcover);
+        holder.tv_startprice.setText("起送价￥"+datas.get(position).getStore().getStartFee());
+        holder.tv_giveprice.setText("配送费￥"+datas.get(position).getStore().getPackingFee());
     }
 
     @Override

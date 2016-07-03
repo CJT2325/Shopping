@@ -1,6 +1,6 @@
 package com.cjt.shopping.fragment;
 
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -12,6 +12,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.cjt.shopping.R;
+import com.cjt.shopping.bean.ShopList;
+import com.cjt.shopping.fragment.view.HomeView;
+import com.cjt.shopping.presenter.BasePresenter;
+import com.cjt.shopping.presenter.HomePresenter;
 import com.cjt.shopping.ui.acitivity.ShopDetailActivity;
 import com.cjt.shopping.adapter.ShopAdapter;
 
@@ -22,10 +26,10 @@ import java.util.List;
  * 作者: 陈嘉桐 on 2016/6/12
  * 邮箱: 445263848@qq.com.
  */
-public class HomeFragment extends Fragment {
+public class HomeFragment extends BaseFragment<HomeFragment,HomePresenter> implements HomeView{
     private RecyclerView mRecyclerView;
     private ShopAdapter mShopAdapter;
-    private List<String> mDatas;
+    private List<ShopList.VendorsBean> mDatas;
 
     public static HomeFragment newInstance() {
         HomeFragment fragment = new HomeFragment();
@@ -37,6 +41,11 @@ public class HomeFragment extends Fragment {
 
     public HomeFragment() {
 
+    }
+
+    @Override
+    protected HomePresenter creatPresenter() {
+        return new HomePresenter(this);
     }
 
     @Override
@@ -53,21 +62,41 @@ public class HomeFragment extends Fragment {
         mShopAdapter = new ShopAdapter(mDatas, getActivity(), new ShopAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-                startActivity(new Intent(getActivity(), ShopDetailActivity.class));
+                Intent intent=new Intent(getActivity(), ShopDetailActivity.class);
+                Log.i("CJT","获取商家ID"+mDatas.get(position).getId());
+                intent.putExtra("vendorID",mDatas.get(position).getId()+"");
+                startActivity(intent);
                 Log.i("CJT","Item click");
             }
         });
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
         mRecyclerView.setAdapter(mShopAdapter);
+        this.mPresenter=creatPresenter();
         return view;
     }
 
-    private void initDatas() {
-        mDatas = new ArrayList<String>();
-        for (int i = 0; i < 10; i++) {
-            mDatas.add("Stirng " + i);
+    @Override
+    public void onStart() {
+        super.onStart();
+        if (getPresenter()!=null) {
+            getPresenter().getShopList();
+        }else{
+            Log.i("CJT","presenter is null");
         }
     }
 
+    private void initDatas() {
+        mDatas = new ArrayList<ShopList.VendorsBean>();
+//        for (int i = 0; i < 10; i++) {
+//            mDatas.add("Stirng " + i);
+//        }
+    }
 
+
+    @Override
+    public void updata(List<ShopList.VendorsBean> list) {
+        mDatas.clear();
+        mDatas=list;
+        mShopAdapter.updata(list);
+    }
 }
