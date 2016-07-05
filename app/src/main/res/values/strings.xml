@@ -99,4 +99,7 @@
     <string name="title_activity_address_manage">AddressManageActivity</string>
     <string name="title_activity_address_edit">AddressEditActivity</string>
     <string name="title_activity_get_address_by_map">GetAddressByMapActivity</string>
+    <string name="title_activity_good_detail">GoodDetailActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
 </resources>

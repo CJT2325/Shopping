@@ -14,21 +14,21 @@ public class ShopInfo {
      * allByTypeSize : 0
      * allLikeSize : 1
      * allSize : 1
-     * categories : [{"count":0,"id":49,"name":"好了","state":0,"storeId":20},{"count":0,"id":51,"name":"哈哈h","state":0,"storeId":20},{"count":0,"id":48,"name":"爱奇艺","state":0,"storeId":20},{"count":0,"id":50,"name":"你好啊","state":0,"storeId":20}]
+     * categories : [{"count":0,"id":51,"name":"哈哈h","state":0,"storeId":20},{"count":0,"id":49,"name":"好了","state":0,"storeId":20},{"count":0,"id":50,"name":"你好啊","state":0,"storeId":20},{"count":0,"id":48,"name":"爱奇艺","state":0,"storeId":20}]
      * category : null
      * cutPage : {"curPage":1,"endPage":1,"midCount":5,"nextPage":1,"pageButtons":[{"sign":"1","signText":"thisclass","text":"1"}],"pageSize":0,"prePage":0,"showCount":10,"startPage":1,"state":3,"text":"thisclass","totalPage":1}
      * good : null
      * goodImage : null
-     * goods : [{"basePrice":77,"category":{"count":0,"id":51,"name":"哈哈h","state":0,"storeId":20},"clickCount":0,"count":9993,"details":"好男鞋，华软找","discount":0.9,"goodImage":{"good":null,"id":45,"shopFile":{"id":118,"url":"/save/9/0feb8317-4c4a-4fdb-81bd-2bc5168d86c0.JPG"}},"goodImages":null,"gradePrivilege":{"cutFive":4,"cutFour":5,"cutOne":8,"cutThree":6,"cutTwo":7,"enoughFive":80,"enoughFour":80,"enoughOne":80,"enoughThree":80,"enoughTwo":80,"good":null,"id":6,"sign":0},"id":38,"martketPrice":0,"name":"精品鞋","sellCount":0,"shellPrice":69.3,"state":1,"stateDescribe":"上架","store":{"address":"啊时代发生的发生","categories":[{"count":0,"id":49,"name":"好了","state":0,"storeId":20},{"count":0,"id":51,"name":"哈哈h","state":0,"storeId":20},{"count":0,"id":48,"name":"爱奇艺","state":0,"storeId":20},{"count":0,"id":50,"name":"你好啊","state":0,"storeId":20}],"clickCount":0,"createTime":"2016-06-18T23:29:20","details":"当时发生的发生","id":20,"idcard":{"address":"是否是大法师答复","id":30,"idcardImages":[{"id":15,"idcardId":30,"shopFile":{"id":101,"url":"/save/1009/828e3340-ca26-46c6-9eaf-77ef6104ff20.jpg"},"sign":null},{"id":14,"idcardId":30,"shopFile":{"id":100,"url":"/save/1009/00ab6626-3200-431c-854d-bf44077dfe81.jpg"},"sign":null},{"id":13,"idcardId":30,"shopFile":{"id":99,"url":"/save/1009/77cf9dff-27cd-4885-8399-6a185c5af8d2.jpg"},"sign":null}],"name":"许","number":"23423546567567"},"name":"啊哈U","packingFee":0,"position":null,"sellCount":0,"startFee":0,"state":1,"storeImage":{"id":18,"shopFile":{"id":117,"url":"/save/10/683f4d25-932b-4549-8dd5-7a858c458401.JPG"},"store":null},"vendor":{"id":9,"state":0,"store":null,"user":{"email":"34564747@qq.com","id":1009,"myAddresses":[{"consignee":"443534","id":25,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"443534","state":0,"user":null},{"consignee":"许光宇","id":27,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"23423","state":0,"user":null},{"consignee":"许光宇","id":26,"path":" 地址 * 邮政编码 * 添加收货地址 收货地址列表 443534 443534 13640869683 广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"123423","state":0,"user":null}],"name":"xuxu22","password":"44445555","phone":"13445567825","power":1,"sex":"男","state":1,"totalOut":0,"vendor":null}}}},{"basePrice":77,"category":{"count":0,"id":51,"name":"哈哈h","state":0,"storeId":20},"clickCount":0,"count":9998,"details":"好男鞋，华软找","discount":0.9,"goodImage":{"good":null,"id":46,"shopFile":{"id":119,"url":"/save/9/3e0fa25b-d7d3-4ef1-a368-983ce2fc2d0e.JPG"}},"goodImages":null,"gradePrivilege":{"cutFive":4,"cutFour":5,"cutOne":8,"cutThree":6,"cutTwo":7,"enoughFive":80,"enoughFour":80,"enoughOne":80,"enoughThree":80,"enoughTwo":80,"good":null,"id":7,"sign":0},"id":39,"martketPrice":0,"name":"舒服鞋","sellCount":0,"shellPrice":69.3,"state":1,"stateDescribe":"上架","store":{"address":"啊时代发生的发生","categories":[{"count":0,"id":49,"name":"好了","state":0,"storeId":20},{"count":0,"id":51,"name":"哈哈h","state":0,"storeId":20},{"count":0,"id":48,"name":"爱奇艺","state":0,"storeId":20},{"count":0,"id":50,"name":"你好啊","state":0,"storeId":20}],"clickCount":0,"createTime":"2016-06-18T23:29:20","details":"当时发生的发生","id":20,"idcard":{"address":"是否是大法师答复","id":30,"idcardImages":[{"id":15,"idcardId":30,"shopFile":{"id":101,"url":"/save/1009/828e3340-ca26-46c6-9eaf-77ef6104ff20.jpg"},"sign":null},{"id":14,"idcardId":30,"shopFile":{"id":100,"url":"/save/1009/00ab6626-3200-431c-854d-bf44077dfe81.jpg"},"sign":null},{"id":13,"idcardId":30,"shopFile":{"id":99,"url":"/save/1009/77cf9dff-27cd-4885-8399-6a185c5af8d2.jpg"},"sign":null}],"name":"许","number":"23423546567567"},"name":"啊哈U","packingFee":0,"position":null,"sellCount":0,"startFee":0,"state":1,"storeImage":{"id":18,"shopFile":{"id":117,"url":"/save/10/683f4d25-932b-4549-8dd5-7a858c458401.JPG"},"store":null},"vendor":{"id":9,"state":0,"store":null,"user":{"email":"34564747@qq.com","id":1009,"myAddresses":[{"consignee":"443534","id":25,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"443534","state":0,"user":null},{"consignee":"许光宇","id":27,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"23423","state":0,"user":null},{"consignee":"许光宇","id":26,"path":" 地址 * 邮政编码 * 添加收货地址 收货地址列表 443534 443534 13640869683 广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"123423","state":0,"user":null}],"name":"xuxu22","password":"44445555","phone":"13445567825","power":1,"sex":"男","state":1,"totalOut":0,"vendor":null}}}}]
+     * goods : [{"basePrice":77,"category":{"count":0,"id":51,"name":"哈哈h","state":0,"storeId":20},"clickCount":0,"count":9993,"details":"好男鞋，华软找","discount":0.9,"goodImage":{"good":null,"id":45,"shopFile":{"id":118,"url":"/save/9/0feb8317-4c4a-4fdb-81bd-2bc5168d86c0.JPG"}},"goodImages":null,"gradePrivilege":{"cutFive":4,"cutFour":5,"cutOne":8,"cutThree":6,"cutTwo":7,"enoughFive":80,"enoughFour":80,"enoughOne":80,"enoughThree":80,"enoughTwo":80,"good":null,"id":6,"sign":0},"id":38,"martketPrice":0,"name":"精品鞋","sellCount":0,"shellPrice":69.3,"state":1,"stateDescribe":"上架","store":{"address":"啊时代发生的发生","categories":[{"count":0,"id":51,"name":"哈哈h","state":0,"storeId":20},{"count":0,"id":49,"name":"好了","state":0,"storeId":20},{"count":0,"id":50,"name":"你好啊","state":0,"storeId":20},{"count":0,"id":48,"name":"爱奇艺","state":0,"storeId":20}],"clickCount":0,"createTime":"2016-06-18T23:29:20","details":"当时发生的发生","id":20,"idcard":{"address":"是否是大法师答复","id":30,"idcardImages":[{"id":13,"idcardId":30,"shopFile":{"id":99,"url":"/save/1009/77cf9dff-27cd-4885-8399-6a185c5af8d2.jpg"},"sign":null},{"id":14,"idcardId":30,"shopFile":{"id":100,"url":"/save/1009/00ab6626-3200-431c-854d-bf44077dfe81.jpg"},"sign":null},{"id":15,"idcardId":30,"shopFile":{"id":101,"url":"/save/1009/828e3340-ca26-46c6-9eaf-77ef6104ff20.jpg"},"sign":null}],"name":"许","number":"23423546567567"},"name":"啊哈U","packingFee":0,"position":null,"sellCount":0,"startFee":0,"state":1,"storeImage":{"id":18,"shopFile":{"id":117,"url":"/save/10/683f4d25-932b-4549-8dd5-7a858c458401.JPG"},"store":null},"vendor":{"id":9,"state":0,"store":null,"user":{"email":"34564747@qq.com","id":1009,"myAddresses":[{"consignee":"许光宇","id":27,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"23423","state":0,"user":null},{"consignee":"许光宇","id":26,"path":" 地址 * 邮政编码 * 添加收货地址 收货地址列表 443534 443534 13640869683 广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"123423","state":0,"user":null},{"consignee":"443534","id":25,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"443534","state":0,"user":null}],"name":"xuxu22","password":"44445555","phone":"13445567825","power":1,"sex":"男","state":1,"totalOut":0,"vendor":null}}}},{"basePrice":77,"category":{"count":0,"id":51,"name":"哈哈h","state":0,"storeId":20},"clickCount":0,"count":9998,"details":"好男鞋，华软找","discount":0.9,"goodImage":{"good":null,"id":46,"shopFile":{"id":119,"url":"/save/9/3e0fa25b-d7d3-4ef1-a368-983ce2fc2d0e.JPG"}},"goodImages":null,"gradePrivilege":{"cutFive":4,"cutFour":5,"cutOne":8,"cutThree":6,"cutTwo":7,"enoughFive":80,"enoughFour":80,"enoughOne":80,"enoughThree":80,"enoughTwo":80,"good":null,"id":7,"sign":0},"id":39,"martketPrice":0,"name":"舒服鞋","sellCount":0,"shellPrice":69.3,"state":1,"stateDescribe":"上架","store":{"address":"啊时代发生的发生","categories":[{"count":0,"id":51,"name":"哈哈h","state":0,"storeId":20},{"count":0,"id":49,"name":"好了","state":0,"storeId":20},{"count":0,"id":50,"name":"你好啊","state":0,"storeId":20},{"count":0,"id":48,"name":"爱奇艺","state":0,"storeId":20}],"clickCount":0,"createTime":"2016-06-18T23:29:20","details":"当时发生的发生","id":20,"idcard":{"address":"是否是大法师答复","id":30,"idcardImages":[{"id":13,"idcardId":30,"shopFile":{"id":99,"url":"/save/1009/77cf9dff-27cd-4885-8399-6a185c5af8d2.jpg"},"sign":null},{"id":14,"idcardId":30,"shopFile":{"id":100,"url":"/save/1009/00ab6626-3200-431c-854d-bf44077dfe81.jpg"},"sign":null},{"id":15,"idcardId":30,"shopFile":{"id":101,"url":"/save/1009/828e3340-ca26-46c6-9eaf-77ef6104ff20.jpg"},"sign":null}],"name":"许","number":"23423546567567"},"name":"啊哈U","packingFee":0,"position":null,"sellCount":0,"startFee":0,"state":1,"storeImage":{"id":18,"shopFile":{"id":117,"url":"/save/10/683f4d25-932b-4549-8dd5-7a858c458401.JPG"},"store":null},"vendor":{"id":9,"state":0,"store":null,"user":{"email":"34564747@qq.com","id":1009,"myAddresses":[{"consignee":"许光宇","id":27,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"23423","state":0,"user":null},{"consignee":"许光宇","id":26,"path":" 地址 * 邮政编码 * 添加收货地址 收货地址列表 443534 443534 13640869683 广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"123423","state":0,"user":null},{"consignee":"443534","id":25,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"443534","state":0,"user":null}],"name":"xuxu22","password":"44445555","phone":"13445567825","power":1,"sex":"男","state":1,"totalOut":0,"vendor":null}}}}]
      * keyword :
      * page : 1
      * pageSize : 12
      * result : null
      * showCount : 10
      * typeid : 0
-     * user : null
-     * userId : null
-     * vendor : {"id":9,"state":0,"store":{"address":"啊时代发生的发生","categories":[{"count":0,"id":49,"name":"好了","state":0,"storeId":20},{"count":0,"id":51,"name":"哈哈h","state":0,"storeId":20},{"count":0,"id":48,"name":"爱奇艺","state":0,"storeId":20},{"count":0,"id":50,"name":"你好啊","state":0,"storeId":20}],"clickCount":0,"createTime":"2016-06-18T23:29:20","details":"当时发生的发生","id":20,"idcard":{"address":"是否是大法师答复","id":30,"idcardImages":[{"id":15,"idcardId":30,"shopFile":{"id":101,"url":"/save/1009/828e3340-ca26-46c6-9eaf-77ef6104ff20.jpg"},"sign":null},{"id":14,"idcardId":30,"shopFile":{"id":100,"url":"/save/1009/00ab6626-3200-431c-854d-bf44077dfe81.jpg"},"sign":null},{"id":13,"idcardId":30,"shopFile":{"id":99,"url":"/save/1009/77cf9dff-27cd-4885-8399-6a185c5af8d2.jpg"},"sign":null}],"name":"许","number":"23423546567567"},"name":"啊哈U","packingFee":0,"position":null,"sellCount":0,"startFee":0,"state":1,"storeImage":{"id":18,"shopFile":{"id":117,"url":"/save/10/683f4d25-932b-4549-8dd5-7a858c458401.JPG"},"store":null},"vendor":null},"user":{"email":"34564747@qq.com","id":1009,"myAddresses":[{"consignee":"443534","id":25,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"443534","state":0,"user":null},{"consignee":"许光宇","id":27,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"23423","state":0,"user":null},{"consignee":"许光宇","id":26,"path":" 地址 * 邮政编码 * 添加收货地址 收货地址列表 443534 443534 13640869683 广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"123423","state":0,"user":null}],"name":"xuxu22","password":"44445555","phone":"13445567825","power":1,"sex":"男","state":1,"totalOut":0,"vendor":null}}
+     * user : {"email":"345353@qq.com","id":1013,"myAddresses":[],"name":"cjt","password":"123456","phone":"18814117978","power":1,"sex":"男","state":1,"totalOut":0,"vendor":null}
+     * userId : 1013
+     * vendor : {"id":9,"state":0,"store":{"address":"啊时代发生的发生","categories":[{"count":0,"id":51,"name":"哈哈h","state":0,"storeId":20},{"count":0,"id":49,"name":"好了","state":0,"storeId":20},{"count":0,"id":50,"name":"你好啊","state":0,"storeId":20},{"count":0,"id":48,"name":"爱奇艺","state":0,"storeId":20}],"clickCount":0,"createTime":"2016-06-18T23:29:20","details":"当时发生的发生","id":20,"idcard":{"address":"是否是大法师答复","id":30,"idcardImages":[{"id":13,"idcardId":30,"shopFile":{"id":99,"url":"/save/1009/77cf9dff-27cd-4885-8399-6a185c5af8d2.jpg"},"sign":null},{"id":14,"idcardId":30,"shopFile":{"id":100,"url":"/save/1009/00ab6626-3200-431c-854d-bf44077dfe81.jpg"},"sign":null},{"id":15,"idcardId":30,"shopFile":{"id":101,"url":"/save/1009/828e3340-ca26-46c6-9eaf-77ef6104ff20.jpg"},"sign":null}],"name":"许","number":"23423546567567"},"name":"啊哈U","packingFee":0,"position":null,"sellCount":0,"startFee":0,"state":1,"storeImage":{"id":18,"shopFile":{"id":117,"url":"/save/10/683f4d25-932b-4549-8dd5-7a858c458401.JPG"},"store":null},"vendor":null},"user":{"email":"34564747@qq.com","id":1009,"myAddresses":[{"consignee":"许光宇","id":27,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"23423","state":0,"user":null},{"consignee":"许光宇","id":26,"path":" 地址 * 邮政编码 * 添加收货地址 收货地址列表 443534 443534 13640869683 广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"123423","state":0,"user":null},{"consignee":"443534","id":25,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"443534","state":0,"user":null}],"name":"xuxu22","password":"44445555","phone":"13445567825","power":1,"sex":"男","state":1,"totalOut":0,"vendor":null}}
      * vendorId : 9
      */
 
@@ -62,21 +62,35 @@ public class ShopInfo {
     private Object result;
     private int showCount;
     private int typeid;
-    private Object user;
-    private Object userId;
+    /**
+     * email : 345353@qq.com
+     * id : 1013
+     * myAddresses : []
+     * name : cjt
+     * password : 123456
+     * phone : 18814117978
+     * power : 1
+     * sex : 男
+     * state : 1
+     * totalOut : 0
+     * vendor : null
+     */
+
+    private UserBean user;
+    private String userId;
     /**
      * id : 9
      * state : 0
-     * store : {"address":"啊时代发生的发生","categories":[{"count":0,"id":49,"name":"好了","state":0,"storeId":20},{"count":0,"id":51,"name":"哈哈h","state":0,"storeId":20},{"count":0,"id":48,"name":"爱奇艺","state":0,"storeId":20},{"count":0,"id":50,"name":"你好啊","state":0,"storeId":20}],"clickCount":0,"createTime":"2016-06-18T23:29:20","details":"当时发生的发生","id":20,"idcard":{"address":"是否是大法师答复","id":30,"idcardImages":[{"id":15,"idcardId":30,"shopFile":{"id":101,"url":"/save/1009/828e3340-ca26-46c6-9eaf-77ef6104ff20.jpg"},"sign":null},{"id":14,"idcardId":30,"shopFile":{"id":100,"url":"/save/1009/00ab6626-3200-431c-854d-bf44077dfe81.jpg"},"sign":null},{"id":13,"idcardId":30,"shopFile":{"id":99,"url":"/save/1009/77cf9dff-27cd-4885-8399-6a185c5af8d2.jpg"},"sign":null}],"name":"许","number":"23423546567567"},"name":"啊哈U","packingFee":0,"position":null,"sellCount":0,"startFee":0,"state":1,"storeImage":{"id":18,"shopFile":{"id":117,"url":"/save/10/683f4d25-932b-4549-8dd5-7a858c458401.JPG"},"store":null},"vendor":null}
-     * user : {"email":"34564747@qq.com","id":1009,"myAddresses":[{"consignee":"443534","id":25,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"443534","state":0,"user":null},{"consignee":"许光宇","id":27,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"23423","state":0,"user":null},{"consignee":"许光宇","id":26,"path":" 地址 * 邮政编码 * 添加收货地址 收货地址列表 443534 443534 13640869683 广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"123423","state":0,"user":null}],"name":"xuxu22","password":"44445555","phone":"13445567825","power":1,"sex":"男","state":1,"totalOut":0,"vendor":null}
+     * store : {"address":"啊时代发生的发生","categories":[{"count":0,"id":51,"name":"哈哈h","state":0,"storeId":20},{"count":0,"id":49,"name":"好了","state":0,"storeId":20},{"count":0,"id":50,"name":"你好啊","state":0,"storeId":20},{"count":0,"id":48,"name":"爱奇艺","state":0,"storeId":20}],"clickCount":0,"createTime":"2016-06-18T23:29:20","details":"当时发生的发生","id":20,"idcard":{"address":"是否是大法师答复","id":30,"idcardImages":[{"id":13,"idcardId":30,"shopFile":{"id":99,"url":"/save/1009/77cf9dff-27cd-4885-8399-6a185c5af8d2.jpg"},"sign":null},{"id":14,"idcardId":30,"shopFile":{"id":100,"url":"/save/1009/00ab6626-3200-431c-854d-bf44077dfe81.jpg"},"sign":null},{"id":15,"idcardId":30,"shopFile":{"id":101,"url":"/save/1009/828e3340-ca26-46c6-9eaf-77ef6104ff20.jpg"},"sign":null}],"name":"许","number":"23423546567567"},"name":"啊哈U","packingFee":0,"position":null,"sellCount":0,"startFee":0,"state":1,"storeImage":{"id":18,"shopFile":{"id":117,"url":"/save/10/683f4d25-932b-4549-8dd5-7a858c458401.JPG"},"store":null},"vendor":null}
+     * user : {"email":"34564747@qq.com","id":1009,"myAddresses":[{"consignee":"许光宇","id":27,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"23423","state":0,"user":null},{"consignee":"许光宇","id":26,"path":" 地址 * 邮政编码 * 添加收货地址 收货地址列表 443534 443534 13640869683 广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"123423","state":0,"user":null},{"consignee":"443534","id":25,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"443534","state":0,"user":null}],"name":"xuxu22","password":"44445555","phone":"13445567825","power":1,"sex":"男","state":1,"totalOut":0,"vendor":null}
      */
 
     private VendorBean vendor;
     private String vendorId;
     /**
      * count : 0
-     * id : 49
-     * name : 好了
+     * id : 51
+     * name : 哈哈h
      * state : 0
      * storeId : 20
      */
@@ -99,7 +113,7 @@ public class ShopInfo {
      * shellPrice : 69.3
      * state : 1
      * stateDescribe : 上架
-     * store : {"address":"啊时代发生的发生","categories":[{"count":0,"id":49,"name":"好了","state":0,"storeId":20},{"count":0,"id":51,"name":"哈哈h","state":0,"storeId":20},{"count":0,"id":48,"name":"爱奇艺","state":0,"storeId":20},{"count":0,"id":50,"name":"你好啊","state":0,"storeId":20}],"clickCount":0,"createTime":"2016-06-18T23:29:20","details":"当时发生的发生","id":20,"idcard":{"address":"是否是大法师答复","id":30,"idcardImages":[{"id":15,"idcardId":30,"shopFile":{"id":101,"url":"/save/1009/828e3340-ca26-46c6-9eaf-77ef6104ff20.jpg"},"sign":null},{"id":14,"idcardId":30,"shopFile":{"id":100,"url":"/save/1009/00ab6626-3200-431c-854d-bf44077dfe81.jpg"},"sign":null},{"id":13,"idcardId":30,"shopFile":{"id":99,"url":"/save/1009/77cf9dff-27cd-4885-8399-6a185c5af8d2.jpg"},"sign":null}],"name":"许","number":"23423546567567"},"name":"啊哈U","packingFee":0,"position":null,"sellCount":0,"startFee":0,"state":1,"storeImage":{"id":18,"shopFile":{"id":117,"url":"/save/10/683f4d25-932b-4549-8dd5-7a858c458401.JPG"},"store":null},"vendor":{"id":9,"state":0,"store":null,"user":{"email":"34564747@qq.com","id":1009,"myAddresses":[{"consignee":"443534","id":25,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"443534","state":0,"user":null},{"consignee":"许光宇","id":27,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"23423","state":0,"user":null},{"consignee":"许光宇","id":26,"path":" 地址 * 邮政编码 * 添加收货地址 收货地址列表 443534 443534 13640869683 广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"123423","state":0,"user":null}],"name":"xuxu22","password":"44445555","phone":"13445567825","power":1,"sex":"男","state":1,"totalOut":0,"vendor":null}}}
+     * store : {"address":"啊时代发生的发生","categories":[{"count":0,"id":51,"name":"哈哈h","state":0,"storeId":20},{"count":0,"id":49,"name":"好了","state":0,"storeId":20},{"count":0,"id":50,"name":"你好啊","state":0,"storeId":20},{"count":0,"id":48,"name":"爱奇艺","state":0,"storeId":20}],"clickCount":0,"createTime":"2016-06-18T23:29:20","details":"当时发生的发生","id":20,"idcard":{"address":"是否是大法师答复","id":30,"idcardImages":[{"id":13,"idcardId":30,"shopFile":{"id":99,"url":"/save/1009/77cf9dff-27cd-4885-8399-6a185c5af8d2.jpg"},"sign":null},{"id":14,"idcardId":30,"shopFile":{"id":100,"url":"/save/1009/00ab6626-3200-431c-854d-bf44077dfe81.jpg"},"sign":null},{"id":15,"idcardId":30,"shopFile":{"id":101,"url":"/save/1009/828e3340-ca26-46c6-9eaf-77ef6104ff20.jpg"},"sign":null}],"name":"许","number":"23423546567567"},"name":"啊哈U","packingFee":0,"position":null,"sellCount":0,"startFee":0,"state":1,"storeImage":{"id":18,"shopFile":{"id":117,"url":"/save/10/683f4d25-932b-4549-8dd5-7a858c458401.JPG"},"store":null},"vendor":{"id":9,"state":0,"store":null,"user":{"email":"34564747@qq.com","id":1009,"myAddresses":[{"consignee":"许光宇","id":27,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"23423","state":0,"user":null},{"consignee":"许光宇","id":26,"path":" 地址 * 邮政编码 * 添加收货地址 收货地址列表 443534 443534 13640869683 广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"123423","state":0,"user":null},{"consignee":"443534","id":25,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"443534","state":0,"user":null}],"name":"xuxu22","password":"44445555","phone":"13445567825","power":1,"sex":"男","state":1,"totalOut":0,"vendor":null}}}
      */
 
     private List<GoodsBean> goods;
@@ -224,19 +238,19 @@ public class ShopInfo {
         this.typeid = typeid;
     }
 
-    public Object getUser() {
+    public UserBean getUser() {
         return user;
     }
 
-    public void setUser(Object user) {
+    public void setUser(UserBean user) {
         this.user = user;
     }
 
-    public Object getUserId() {
+    public String getUserId() {
         return userId;
     }
 
-    public void setUserId(Object userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 
@@ -419,17 +433,119 @@ public class ShopInfo {
         }
     }
 
+    public static class UserBean {
+        private String email;
+        private int id;
+        private String name;
+        private String password;
+        private String phone;
+        private int power;
+        private String sex;
+        private int state;
+        private int totalOut;
+        private Object vendor;
+        private List<?> myAddresses;
+
+        public String getEmail() {
+            return email;
+        }
+
+        public void setEmail(String email) {
+            this.email = email;
+        }
+
+        public int getId() {
+            return id;
+        }
+
+        public void setId(int id) {
+            this.id = id;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public String getPassword() {
+            return password;
+        }
+
+        public void setPassword(String password) {
+            this.password = password;
+        }
+
+        public String getPhone() {
+            return phone;
+        }
+
+        public void setPhone(String phone) {
+            this.phone = phone;
+        }
+
+        public int getPower() {
+            return power;
+        }
+
+        public void setPower(int power) {
+            this.power = power;
+        }
+
+        public String getSex() {
+            return sex;
+        }
+
+        public void setSex(String sex) {
+            this.sex = sex;
+        }
+
+        public int getState() {
+            return state;
+        }
+
+        public void setState(int state) {
+            this.state = state;
+        }
+
+        public int getTotalOut() {
+            return totalOut;
+        }
+
+        public void setTotalOut(int totalOut) {
+            this.totalOut = totalOut;
+        }
+
+        public Object getVendor() {
+            return vendor;
+        }
+
+        public void setVendor(Object vendor) {
+            this.vendor = vendor;
+        }
+
+        public List<?> getMyAddresses() {
+            return myAddresses;
+        }
+
+        public void setMyAddresses(List<?> myAddresses) {
+            this.myAddresses = myAddresses;
+        }
+    }
+
     public static class VendorBean {
         private int id;
         private int state;
         /**
          * address : 啊时代发生的发生
-         * categories : [{"count":0,"id":49,"name":"好了","state":0,"storeId":20},{"count":0,"id":51,"name":"哈哈h","state":0,"storeId":20},{"count":0,"id":48,"name":"爱奇艺","state":0,"storeId":20},{"count":0,"id":50,"name":"你好啊","state":0,"storeId":20}]
+         * categories : [{"count":0,"id":51,"name":"哈哈h","state":0,"storeId":20},{"count":0,"id":49,"name":"好了","state":0,"storeId":20},{"count":0,"id":50,"name":"你好啊","state":0,"storeId":20},{"count":0,"id":48,"name":"爱奇艺","state":0,"storeId":20}]
          * clickCount : 0
          * createTime : 2016-06-18T23:29:20
          * details : 当时发生的发生
          * id : 20
-         * idcard : {"address":"是否是大法师答复","id":30,"idcardImages":[{"id":15,"idcardId":30,"shopFile":{"id":101,"url":"/save/1009/828e3340-ca26-46c6-9eaf-77ef6104ff20.jpg"},"sign":null},{"id":14,"idcardId":30,"shopFile":{"id":100,"url":"/save/1009/00ab6626-3200-431c-854d-bf44077dfe81.jpg"},"sign":null},{"id":13,"idcardId":30,"shopFile":{"id":99,"url":"/save/1009/77cf9dff-27cd-4885-8399-6a185c5af8d2.jpg"},"sign":null}],"name":"许","number":"23423546567567"}
+         * idcard : {"address":"是否是大法师答复","id":30,"idcardImages":[{"id":13,"idcardId":30,"shopFile":{"id":99,"url":"/save/1009/77cf9dff-27cd-4885-8399-6a185c5af8d2.jpg"},"sign":null},{"id":14,"idcardId":30,"shopFile":{"id":100,"url":"/save/1009/00ab6626-3200-431c-854d-bf44077dfe81.jpg"},"sign":null},{"id":15,"idcardId":30,"shopFile":{"id":101,"url":"/save/1009/828e3340-ca26-46c6-9eaf-77ef6104ff20.jpg"},"sign":null}],"name":"许","number":"23423546567567"}
          * name : 啊哈U
          * packingFee : 0
          * position : null
@@ -444,7 +560,7 @@ public class ShopInfo {
         /**
          * email : 34564747@qq.com
          * id : 1009
-         * myAddresses : [{"consignee":"443534","id":25,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"443534","state":0,"user":null},{"consignee":"许光宇","id":27,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"23423","state":0,"user":null},{"consignee":"许光宇","id":26,"path":" 地址 * 邮政编码 * 添加收货地址 收货地址列表 443534 443534 13640869683 广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"123423","state":0,"user":null}]
+         * myAddresses : [{"consignee":"许光宇","id":27,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"23423","state":0,"user":null},{"consignee":"许光宇","id":26,"path":" 地址 * 邮政编码 * 添加收货地址 收货地址列表 443534 443534 13640869683 广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"123423","state":0,"user":null},{"consignee":"443534","id":25,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"443534","state":0,"user":null}]
          * name : xuxu22
          * password : 44445555
          * phone : 13445567825
@@ -498,7 +614,7 @@ public class ShopInfo {
             /**
              * address : 是否是大法师答复
              * id : 30
-             * idcardImages : [{"id":15,"idcardId":30,"shopFile":{"id":101,"url":"/save/1009/828e3340-ca26-46c6-9eaf-77ef6104ff20.jpg"},"sign":null},{"id":14,"idcardId":30,"shopFile":{"id":100,"url":"/save/1009/00ab6626-3200-431c-854d-bf44077dfe81.jpg"},"sign":null},{"id":13,"idcardId":30,"shopFile":{"id":99,"url":"/save/1009/77cf9dff-27cd-4885-8399-6a185c5af8d2.jpg"},"sign":null}]
+             * idcardImages : [{"id":13,"idcardId":30,"shopFile":{"id":99,"url":"/save/1009/77cf9dff-27cd-4885-8399-6a185c5af8d2.jpg"},"sign":null},{"id":14,"idcardId":30,"shopFile":{"id":100,"url":"/save/1009/00ab6626-3200-431c-854d-bf44077dfe81.jpg"},"sign":null},{"id":15,"idcardId":30,"shopFile":{"id":101,"url":"/save/1009/828e3340-ca26-46c6-9eaf-77ef6104ff20.jpg"},"sign":null}]
              * name : 许
              * number : 23423546567567
              */
@@ -520,8 +636,8 @@ public class ShopInfo {
             private Object vendor;
             /**
              * count : 0
-             * id : 49
-             * name : 好了
+             * id : 51
+             * name : 哈哈h
              * state : 0
              * storeId : 20
              */
@@ -654,9 +770,9 @@ public class ShopInfo {
                 private String name;
                 private String number;
                 /**
-                 * id : 15
+                 * id : 13
                  * idcardId : 30
-                 * shopFile : {"id":101,"url":"/save/1009/828e3340-ca26-46c6-9eaf-77ef6104ff20.jpg"}
+                 * shopFile : {"id":99,"url":"/save/1009/77cf9dff-27cd-4885-8399-6a185c5af8d2.jpg"}
                  * sign : null
                  */
 
@@ -706,8 +822,8 @@ public class ShopInfo {
                     private int id;
                     private int idcardId;
                     /**
-                     * id : 101
-                     * url : /save/1009/828e3340-ca26-46c6-9eaf-77ef6104ff20.jpg
+                     * id : 99
+                     * url : /save/1009/77cf9dff-27cd-4885-8399-6a185c5af8d2.jpg
                      */
 
                     private ShopFileBean shopFile;
@@ -885,11 +1001,11 @@ public class ShopInfo {
             private int totalOut;
             private Object vendor;
             /**
-             * consignee : 443534
-             * id : 25
+             * consignee : 许光宇
+             * id : 27
              * path : 广东省从化市太平镇广从大道13号
              * phone : 13640869683
-             * postalcode : 443534
+             * postalcode : 23423
              * state : 0
              * user : null
              */
@@ -1149,12 +1265,12 @@ public class ShopInfo {
         private String stateDescribe;
         /**
          * address : 啊时代发生的发生
-         * categories : [{"count":0,"id":49,"name":"好了","state":0,"storeId":20},{"count":0,"id":51,"name":"哈哈h","state":0,"storeId":20},{"count":0,"id":48,"name":"爱奇艺","state":0,"storeId":20},{"count":0,"id":50,"name":"你好啊","state":0,"storeId":20}]
+         * categories : [{"count":0,"id":51,"name":"哈哈h","state":0,"storeId":20},{"count":0,"id":49,"name":"好了","state":0,"storeId":20},{"count":0,"id":50,"name":"你好啊","state":0,"storeId":20},{"count":0,"id":48,"name":"爱奇艺","state":0,"storeId":20}]
          * clickCount : 0
          * createTime : 2016-06-18T23:29:20
          * details : 当时发生的发生
          * id : 20
-         * idcard : {"address":"是否是大法师答复","id":30,"idcardImages":[{"id":15,"idcardId":30,"shopFile":{"id":101,"url":"/save/1009/828e3340-ca26-46c6-9eaf-77ef6104ff20.jpg"},"sign":null},{"id":14,"idcardId":30,"shopFile":{"id":100,"url":"/save/1009/00ab6626-3200-431c-854d-bf44077dfe81.jpg"},"sign":null},{"id":13,"idcardId":30,"shopFile":{"id":99,"url":"/save/1009/77cf9dff-27cd-4885-8399-6a185c5af8d2.jpg"},"sign":null}],"name":"许","number":"23423546567567"}
+         * idcard : {"address":"是否是大法师答复","id":30,"idcardImages":[{"id":13,"idcardId":30,"shopFile":{"id":99,"url":"/save/1009/77cf9dff-27cd-4885-8399-6a185c5af8d2.jpg"},"sign":null},{"id":14,"idcardId":30,"shopFile":{"id":100,"url":"/save/1009/00ab6626-3200-431c-854d-bf44077dfe81.jpg"},"sign":null},{"id":15,"idcardId":30,"shopFile":{"id":101,"url":"/save/1009/828e3340-ca26-46c6-9eaf-77ef6104ff20.jpg"},"sign":null}],"name":"许","number":"23423546567567"}
          * name : 啊哈U
          * packingFee : 0
          * position : null
@@ -1162,7 +1278,7 @@ public class ShopInfo {
          * startFee : 0
          * state : 1
          * storeImage : {"id":18,"shopFile":{"id":117,"url":"/save/10/683f4d25-932b-4549-8dd5-7a858c458401.JPG"},"store":null}
-         * vendor : {"id":9,"state":0,"store":null,"user":{"email":"34564747@qq.com","id":1009,"myAddresses":[{"consignee":"443534","id":25,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"443534","state":0,"user":null},{"consignee":"许光宇","id":27,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"23423","state":0,"user":null},{"consignee":"许光宇","id":26,"path":" 地址 * 邮政编码 * 添加收货地址 收货地址列表 443534 443534 13640869683 广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"123423","state":0,"user":null}],"name":"xuxu22","password":"44445555","phone":"13445567825","power":1,"sex":"男","state":1,"totalOut":0,"vendor":null}}
+         * vendor : {"id":9,"state":0,"store":null,"user":{"email":"34564747@qq.com","id":1009,"myAddresses":[{"consignee":"许光宇","id":27,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"23423","state":0,"user":null},{"consignee":"许光宇","id":26,"path":" 地址 * 邮政编码 * 添加收货地址 收货地址列表 443534 443534 13640869683 广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"123423","state":0,"user":null},{"consignee":"443534","id":25,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"443534","state":0,"user":null}],"name":"xuxu22","password":"44445555","phone":"13445567825","power":1,"sex":"男","state":1,"totalOut":0,"vendor":null}}
          */
 
         private StoreBean store;
@@ -1536,7 +1652,7 @@ public class ShopInfo {
             /**
              * address : 是否是大法师答复
              * id : 30
-             * idcardImages : [{"id":15,"idcardId":30,"shopFile":{"id":101,"url":"/save/1009/828e3340-ca26-46c6-9eaf-77ef6104ff20.jpg"},"sign":null},{"id":14,"idcardId":30,"shopFile":{"id":100,"url":"/save/1009/00ab6626-3200-431c-854d-bf44077dfe81.jpg"},"sign":null},{"id":13,"idcardId":30,"shopFile":{"id":99,"url":"/save/1009/77cf9dff-27cd-4885-8399-6a185c5af8d2.jpg"},"sign":null}]
+             * idcardImages : [{"id":13,"idcardId":30,"shopFile":{"id":99,"url":"/save/1009/77cf9dff-27cd-4885-8399-6a185c5af8d2.jpg"},"sign":null},{"id":14,"idcardId":30,"shopFile":{"id":100,"url":"/save/1009/00ab6626-3200-431c-854d-bf44077dfe81.jpg"},"sign":null},{"id":15,"idcardId":30,"shopFile":{"id":101,"url":"/save/1009/828e3340-ca26-46c6-9eaf-77ef6104ff20.jpg"},"sign":null}]
              * name : 许
              * number : 23423546567567
              */
@@ -1559,14 +1675,14 @@ public class ShopInfo {
              * id : 9
              * state : 0
              * store : null
-             * user : {"email":"34564747@qq.com","id":1009,"myAddresses":[{"consignee":"443534","id":25,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"443534","state":0,"user":null},{"consignee":"许光宇","id":27,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"23423","state":0,"user":null},{"consignee":"许光宇","id":26,"path":" 地址 * 邮政编码 * 添加收货地址 收货地址列表 443534 443534 13640869683 广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"123423","state":0,"user":null}],"name":"xuxu22","password":"44445555","phone":"13445567825","power":1,"sex":"男","state":1,"totalOut":0,"vendor":null}
+             * user : {"email":"34564747@qq.com","id":1009,"myAddresses":[{"consignee":"许光宇","id":27,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"23423","state":0,"user":null},{"consignee":"许光宇","id":26,"path":" 地址 * 邮政编码 * 添加收货地址 收货地址列表 443534 443534 13640869683 广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"123423","state":0,"user":null},{"consignee":"443534","id":25,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"443534","state":0,"user":null}],"name":"xuxu22","password":"44445555","phone":"13445567825","power":1,"sex":"男","state":1,"totalOut":0,"vendor":null}
              */
 
             private VendorBean vendor;
             /**
              * count : 0
-             * id : 49
-             * name : 好了
+             * id : 51
+             * name : 哈哈h
              * state : 0
              * storeId : 20
              */
@@ -1699,9 +1815,9 @@ public class ShopInfo {
                 private String name;
                 private String number;
                 /**
-                 * id : 15
+                 * id : 13
                  * idcardId : 30
-                 * shopFile : {"id":101,"url":"/save/1009/828e3340-ca26-46c6-9eaf-77ef6104ff20.jpg"}
+                 * shopFile : {"id":99,"url":"/save/1009/77cf9dff-27cd-4885-8399-6a185c5af8d2.jpg"}
                  * sign : null
                  */
 
@@ -1751,8 +1867,8 @@ public class ShopInfo {
                     private int id;
                     private int idcardId;
                     /**
-                     * id : 101
-                     * url : /save/1009/828e3340-ca26-46c6-9eaf-77ef6104ff20.jpg
+                     * id : 99
+                     * url : /save/1009/77cf9dff-27cd-4885-8399-6a185c5af8d2.jpg
                      */
 
                     private ShopFileBean shopFile;
@@ -1876,7 +1992,7 @@ public class ShopInfo {
                 /**
                  * email : 34564747@qq.com
                  * id : 1009
-                 * myAddresses : [{"consignee":"443534","id":25,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"443534","state":0,"user":null},{"consignee":"许光宇","id":27,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"23423","state":0,"user":null},{"consignee":"许光宇","id":26,"path":" 地址 * 邮政编码 * 添加收货地址 收货地址列表 443534 443534 13640869683 广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"123423","state":0,"user":null}]
+                 * myAddresses : [{"consignee":"许光宇","id":27,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"23423","state":0,"user":null},{"consignee":"许光宇","id":26,"path":" 地址 * 邮政编码 * 添加收货地址 收货地址列表 443534 443534 13640869683 广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"123423","state":0,"user":null},{"consignee":"443534","id":25,"path":"广东省从化市太平镇广从大道13号","phone":"13640869683","postalcode":"443534","state":0,"user":null}]
                  * name : xuxu22
                  * password : 44445555
                  * phone : 13445567825
@@ -1933,11 +2049,11 @@ public class ShopInfo {
                     private int totalOut;
                     private Object vendor;
                     /**
-                     * consignee : 443534
-                     * id : 25
+                     * consignee : 许光宇
+                     * id : 27
                      * path : 广东省从化市太平镇广从大道13号
                      * phone : 13640869683
-                     * postalcode : 443534
+                     * postalcode : 23423
                      * state : 0
                      * user : null
                      */

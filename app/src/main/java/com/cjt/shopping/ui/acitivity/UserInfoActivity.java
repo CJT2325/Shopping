@@ -18,15 +18,18 @@ import android.util.Log;
 import android.view.Display;
 import android.view.Gravity;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.cjt.shopping.R;
+import com.cjt.shopping.util.Config;
 import com.squareup.picasso.Picasso;
 
 import java.io.File;
@@ -44,6 +47,11 @@ public class UserInfoActivity extends AppCompatActivity implements View.OnClickL
     private RelativeLayout layout_username;
     private RelativeLayout layout_pwd;
     private RelativeLayout layout_phone;
+
+    private TextView tv_username;
+    private TextView tv_phone;
+
+    private TextView tv_logout;
 
     private PopupWindow mPopupWindow;
 
@@ -64,11 +72,16 @@ public class UserInfoActivity extends AppCompatActivity implements View.OnClickL
         layout_pwd = (RelativeLayout) findViewById(R.id.layout_pwd);
         layout_phone = (RelativeLayout) findViewById(R.id.layout_phone);
 
+        tv_logout= (TextView) findViewById(R.id.tv_logout);
+        tv_logout.setOnClickListener(this);
 
         layout_usercover.setOnClickListener(this);
         layout_username.setOnClickListener(this);
         layout_pwd.setOnClickListener(this);
         layout_phone.setOnClickListener(this);
+
+        tv_username= (TextView) findViewById(R.id.tv_username);
+        tv_phone= (TextView) findViewById(R.id.tv_phone);
     }
 
     private void initPopupWindow() {
@@ -108,6 +121,18 @@ public class UserInfoActivity extends AppCompatActivity implements View.OnClickL
     }
 
     @Override
+    protected void onStart() {
+        super.onStart();
+        if (Config.getUserId(this).equals("")){
+            tv_username.setText("");
+            tv_phone.setText("");
+        }else{
+            tv_username.setText(Config.getUserName(this));
+            tv_phone.setText("已绑定手机号 "+Config.getPhone(this));
+        }
+    }
+
+    @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.layout_usercover:
@@ -139,6 +164,12 @@ public class UserInfoActivity extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.tv_cancel:
                 mPopupWindow.dismiss();
+                break;
+            case R.id.tv_logout:
+                Config.saveUserName(this,"");
+                Config.saveUserId(this,"");
+                Config.savePhone(this,"");
+                finish();
                 break;
 
         }

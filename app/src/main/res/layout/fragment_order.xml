@@ -7,8 +7,44 @@
     android:background="#e7e7e7"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".ui.acitivity.MainActivity">
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_orderlist"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/layout_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_usercover"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/default_touxiang" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_tix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_usercover"
+            android:layout_centerHorizontal="true"
+            android:text="你还没有登录,请登录后查看订单"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_loginorregister"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_tix"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/orderbtn_selector"
+            android:text="登录/注册"
+            android:textColor="#FFF" />
+    </RelativeLayout>
 </RelativeLayout>

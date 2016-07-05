@@ -47,7 +47,7 @@
                 android:layout_height="35dp"
                 android:layout_centerVertical="true"
                 android:layout_toLeftOf="@id/iv_next1"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@drawable/default_touxiang" />
         </RelativeLayout>
 
         <View
@@ -63,6 +63,7 @@
             android:background="@drawable/click_selector">
 
             <TextView
+                android:id="@+id/tv_username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -130,6 +131,7 @@
             android:background="@drawable/click_selector">
 
             <TextView
+                android:id="@+id/tv_phone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -157,6 +159,7 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/tv_logout"
         android:layout_width="match_parent"
         android:layout_height="44dp"
         android:layout_alignParentBottom="true"

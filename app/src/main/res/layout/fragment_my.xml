@@ -32,7 +32,7 @@
                     android:layout_height="65dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
-                    android:src="@mipmap/ic_launcher"
+                    android:src="@drawable/default_touxiang"
                     app:civ_border_color="@color/colorPrimaryDark"
                     app:civ_border_width="2dp" />
 

@@ -46,12 +46,44 @@
         android:textStyle="bold"
         android:textSize="17sp"/>
     <Button
-        android:layout_marginRight="6dp"
-        android:layout_marginBottom="6dp"
-        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/btn_add"
+        android:background="@drawable/btn_cir"
+        android:textColor="#FFF"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@id/tv_price"
         android:layout_alignParentRight="true"
+        android:textSize="12sp"
         android:text="+"
+        android:layout_marginBottom="5dp"
         android:layout_width="20dp"
         android:layout_height="20dp" />
-
+    <TextView
+        android:visibility="invisible"
+        android:gravity="center"
+        android:paddingBottom="2dp"
+        android:text="0"
+        android:textSize="18sp"
+        android:layout_toLeftOf="@id/btn_add"
+        android:id="@+id/tv_number"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@id/tv_price"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:visibility="invisible"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:layout_toLeftOf="@id/tv_number"
+        android:id="@+id/btn_reduce"
+        android:background="@drawable/btn_cir"
+        android:textColor="#FFF"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@id/tv_price"
+        android:text="-"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
 </RelativeLayout>

@@ -2,6 +2,7 @@ package com.cjt.shopping.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.cjt.shopping.R;
+import com.cjt.shopping.bean.OrderList;
+import com.cjt.shopping.model.server.ServerAPI;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -18,9 +22,9 @@ import java.util.List;
  */
 public class OrderAdapter extends RecyclerView.Adapter<OrderViewHolder> {
     private Context mContext;
-    private List datas;
+    private List<OrderList.OrdersBean> datas;
 
-    public OrderAdapter(List datas, Context mContext) {
+    public OrderAdapter(List<OrderList.OrdersBean> datas, Context mContext) {
         this.datas = datas;
         this.mContext = mContext;
     }
@@ -33,7 +37,10 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderViewHolder> {
 
     @Override
     public void onBindViewHolder(OrderViewHolder holder, int position) {
-
+        holder.tv_shopname.setText(datas.get(position).getStore().getName());
+        holder.tv_price.setText("￥"+datas.get(position).getTotalPrice());
+        holder.tv_ordertime.setText(datas.get(position).getOrderTime());
+        Picasso.with(mContext).load(ServerAPI.baseUrl+datas.get(position).getStore().getStoreImage().getShopFile().getUrl()).resize(100,100).into(holder.iv_shopcover);
     }
 
     @Override
@@ -42,6 +49,12 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderViewHolder> {
     }
 
 
+    public void updatas(List<OrderList.OrdersBean> ordersBeanlist) {
+        datas.clear();
+        datas=ordersBeanlist;
+        Log.i("CJT","数量="+datas.size());
+        notifyDataSetChanged();
+    }
 }
 class OrderViewHolder extends RecyclerView.ViewHolder {
     ImageView iv_shopcover;

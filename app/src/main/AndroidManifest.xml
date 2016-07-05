@@ -66,6 +66,18 @@
         <activity
             android:name=".ui.acitivity.GetAddressByMapActivity"
             android:label="@string/title_activity_get_address_by_map"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.acitivity.GoodDetailActivity"
+            android:label="@string/title_activity_good_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.acitivity.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.acitivity.RegisterActivity"
+            android:label="@string/title_activity_register"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

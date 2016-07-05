@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.cjt.shopping.ui.acitivity.GoodDetailActivity"
+    tools:showIn="@layout/activity_good_detail">
+
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFF">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#888888" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/shop_cart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100dp"
+            android:gravity="center"
+            android:text="￥0"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#888888"
+            android:gravity="center"
+            android:text="￥10起送"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_bottom">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_goodscover"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#999999" />
+
+            <TextView
+                android:id="@+id/tv_goodsname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_goodscover"
+                android:layout_margin="8dp"
+                android:text="物品名称"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_goodsname"
+                android:layout_marginLeft="8dp"
+                android:text="月售 559"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_sale"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="￥20"
+                android:textColor="#FF0000"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_goodinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_price"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="商品信息"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_goodinfos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_goodinfo"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="可加辣椒酱,花生酱,哦尼酱"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <Button
+                android:layout_marginRight="8dp"
+                android:layout_alignBottom="@id/tv_price"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/orderbtn_selector"
+                android:text="加入购物车"
+                android:textColor="#FFF" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
