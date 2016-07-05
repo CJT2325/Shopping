@@ -65,6 +65,7 @@ public class HomeFragment extends BaseFragment<HomeFragment,HomePresenter> imple
                 Intent intent=new Intent(getActivity(), ShopDetailActivity.class);
                 Log.i("CJT","获取商家ID"+mDatas.get(position).getId());
                 intent.putExtra("vendorID",mDatas.get(position).getId()+"");
+                intent.putExtra("vendorName",mDatas.get(position).getStore().getName());
                 startActivity(intent);
                 Log.i("CJT","Item click");
             }

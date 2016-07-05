@@ -2,6 +2,7 @@ package com.cjt.shopping.presenter;
 
 import android.util.Log;
 
+import com.cjt.shopping.bean.ShopCartList;
 import com.cjt.shopping.bean.ShopInfo;
 import com.cjt.shopping.fragment.SelectFragment;
 import com.cjt.shopping.fragment.view.SelectView;
@@ -39,6 +40,33 @@ public class SelectPresenter extends BasePresenter<SelectFragment>{
                         public void call(ShopInfo shopInfo) {
                             Log.i("CJT", "xixixixixi"+shopInfo.getCategories().size()+" "+shopInfo.getGoods().size());
                             mSelectView.updata(shopInfo.getCategories(),shopInfo.getGoods());
+                        }
+                    }, new Action1<Throwable>() {
+                        @Override
+                        public void call(Throwable throwable) {
+                            Log.i("RxJava", "又是在这里出现了问题呀----->" + throwable.toString());
+                        }
+                    });
+        }else{
+            Log.i("CJT","model is null");
+        }
+    }
+
+    //根据商家ID获取商家信息
+    public void getShopCart(String userId,String storeId){
+        if (mSelectModel!=null) {
+            mSelectModel.getShopCart(userId,storeId)
+                    .subscribeOn(Schedulers.newThread())
+                    .observeOn(AndroidSchedulers.mainThread())
+                    .subscribe(new Action1<ShopCartList>() {
+                        @Override
+                        public void call(ShopCartList shopCartList) {
+                            if (shopCartList.getShopCart().getShopCartItems()!=null){
+                                Log.i("CJT", "购物车数量"+shopCartList.getShopCart().getShopCartItems().size());
+                                mSelectView.updataShopCart(shopCartList.getShopCart().getShopCartItems());
+                            }
+
+
                         }
                     }, new Action1<Throwable>() {
                         @Override

@@ -33,28 +33,36 @@ public abstract class BaseFragment<V,T extends BasePresenter<V>> extends Fragmen
     public void onStart() {
         super.onStart();
         Log.i("BaseActivity", "BaseActivity onStart");
-        mPresenter.onViewStart();
+        if (mPresenter!=null) {
+            mPresenter.onViewStart();
+        }
     }
 
     @Override
     public void onResume() {
         super.onResume();
         Log.i("BaseActivity", "BaseActivity onResume");
-        mPresenter.onViewResume();
+        if (mPresenter!=null) {
+            mPresenter.onViewResume();
+        }
     }
 
     @Override
     public void onStop() {
         super.onStop();
         Log.i("BaseActivity", "BaseActivity onStop");
-        mPresenter.onViewStop();
+        if (mPresenter!=null) {
+            mPresenter.onViewStop();
+        }
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
         Log.i("BaseActivity", "BaseActivity onDestroy");
-        mPresenter.onViewDestroy();
+        if (mPresenter!=null) {
+            mPresenter.onViewDestroy();
+        }
     }
 
     //获取Presenter

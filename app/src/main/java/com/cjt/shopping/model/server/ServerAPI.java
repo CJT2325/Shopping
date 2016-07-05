@@ -1,10 +1,12 @@
 package com.cjt.shopping.model.server;
 
 import com.cjt.shopping.bean.OrderList;
+import com.cjt.shopping.bean.ShopCartList;
 import com.cjt.shopping.bean.ShopInfo;
 import com.cjt.shopping.bean.ShopList;
 import com.cjt.shopping.bean.UserInfo;
 
+import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 import rx.Observable;
@@ -31,8 +33,21 @@ public interface ServerAPI {
 
     //用户注册
 
+
     //根据用户ID获取订单
     @GET("user/order_list.action")
     Observable<OrderList> orderList(@Query("userId") String userId);
 
+    //根据用户ID获取订单
+    @GET("user/store_shopcart.action")
+    Observable<ShopCartList> shopCart(@Query("userId") String userId, @Query("storeId") String storeId);
+
+    //添加商品到购物车
+    @GET("user/shop_cart.action")
+    Observable<Call> addGood(
+            @Query("action") String action,
+            @Query("count") String count,
+            @Query("goodid") String goodid,
+            @Query("userId") String userId
+    );
 }

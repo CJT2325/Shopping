@@ -23,6 +23,7 @@ import java.util.List;
 
 public class ShopDetailActivity extends AppCompatActivity {
     private String vendorID="";
+    private String vendorName="";
     private TabLayout tablayout_shop;
     private ViewPager vp_info;
     private List<Fragment> list_fragment;
@@ -38,9 +39,10 @@ public class ShopDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_shop_detail);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("商店名称");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         vendorID=getIntent().getStringExtra("vendorID");
+        vendorName=getIntent().getStringExtra("vendorName");
+        getSupportActionBar().setTitle(vendorName);
         Log.i("CJT","商家ID ====="+vendorID);
         initData();
     }

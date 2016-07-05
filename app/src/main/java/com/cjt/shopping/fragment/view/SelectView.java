@@ -1,5 +1,6 @@
 package com.cjt.shopping.fragment.view;
 
+import com.cjt.shopping.bean.ShopCartList;
 import com.cjt.shopping.bean.ShopInfo;
 
 import java.util.List;
@@ -10,4 +11,6 @@ import java.util.List;
  */
 public interface SelectView {
     public void updata(List<ShopInfo.CategoriesBean> categoriesList,List<ShopInfo.GoodsBean> goodsList);
+
+    public void updataShopCart(List<ShopCartList.ShopCartBean.ShopCartItemsBean> shopCartItems);
 }
