@@ -1,5 +1,9 @@
 package com.cjt.shopping.model;
 
+import android.util.Log;
+
+import com.cjt.shopping.bean.AddGoodResult;
+import com.cjt.shopping.bean.Order;
 import com.cjt.shopping.bean.ShopCartList;
 import com.cjt.shopping.bean.ShopInfo;
 import com.cjt.shopping.model.Imodel.SelectModel;
@@ -7,6 +11,7 @@ import com.cjt.shopping.model.Imodel.ShopInfoModel;
 import com.cjt.shopping.model.server.ServerAPI;
 import com.cjt.shopping.model.server.ServerAPIModel;
 
+import retrofit2.Call;
 import rx.Observable;
 
 /**
@@ -38,5 +43,21 @@ public class SelectModelImpl implements SelectModel {
     @Override
     public Observable<ShopCartList> getShopCart(String userId, String storeId) {
         return mServerAPI.shopCart(userId, storeId);
+    }
+
+    @Override
+    public Observable<AddGoodResult> addGoosToShopCart(String goodId, String userId) {
+        return mServerAPI.addGood("addGood", "1", goodId, userId);
+    }
+
+    @Override
+    public Observable<AddGoodResult> modGoosToShopCart(String count,String goodId, String userId) {
+        return  mServerAPI.addGood("mod", count, goodId, userId);
+    }
+
+    @Override
+    public Observable<Order> addToOrder(String id, String userId) {
+        Log.i("CJT",id+" "+userId);
+        return mServerAPI.toOrder("add",id, userId);
     }
 }

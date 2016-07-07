@@ -6,11 +6,13 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.cjt.shopping.R;
+import com.cjt.shopping.bean.ShopCartList;
 import com.cjt.shopping.bean.ShopInfo;
 import com.cjt.shopping.model.server.ServerAPI;
 import com.squareup.picasso.Picasso;
@@ -23,17 +25,20 @@ import java.util.List;
  */
 public class GoodsAdapter extends RecyclerView.Adapter<GoodsHolder>{
     private List<ShopInfo.GoodsBean> mDatas;
+    private List<ShopCartList.ShopCartBean.ShopCartItemsBean> mCartDatas;
     private Context mContext;
     private OnItemClickListener listener;
     private String type="";
 
-    public GoodsAdapter(List<ShopInfo.GoodsBean> mDatas, Context mContext,OnItemClickListener listener) {
+    public GoodsAdapter(List<ShopCartList.ShopCartBean.ShopCartItemsBean> mCartDatas,List<ShopInfo.GoodsBean> mDatas, Context mContext,OnItemClickListener listener) {
+        this.mCartDatas=mCartDatas;
         this.mDatas = mDatas;
         this.mContext = mContext;
         this.listener=listener;
     }
     public interface OnItemClickListener {
         public void onItemClick(View view, int position);
+        public void addGoodClick(int position);
     }
 
     @Override
@@ -47,6 +52,15 @@ public class GoodsAdapter extends RecyclerView.Adapter<GoodsHolder>{
             holder.layout_all.setVisibility(View.VISIBLE);
         }else {
             holder.layout_all.setVisibility(View.GONE);
+        }
+        for (int i=0;i<mCartDatas.size();i++){
+            if (mDatas.get(position).getName().equals(mCartDatas.get(i).getGood().getName())){
+                holder.btn_reduce.setVisibility(View.VISIBLE);
+                holder.tv_number.setVisibility(View.VISIBLE);
+                holder.tv_number.setText(""+mCartDatas.get(i).getCount());
+            }else{
+
+            }
         }
         Log.i("CJT", mDatas.get(position).getSellCount() + " ====");
         holder.tv_goodsname.setText(mDatas.get(position).getName());
@@ -70,13 +84,25 @@ public class GoodsAdapter extends RecyclerView.Adapter<GoodsHolder>{
         this.type=type;
         notifyDataSetChanged();
     }
+
+    public void updataShopCart(List<ShopCartList.ShopCartBean.ShopCartItemsBean> mCartDatas){
+        this.mCartDatas.clear();
+        this.mCartDatas=mCartDatas;
+        notifyDataSetChanged();
+    }
 }
 class GoodsHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
     RelativeLayout layout_all;
     TextView tv_goodsname;
     TextView tv_sale;
     TextView tv_price;
+    TextView tv_number;
     ImageView iv_goodscover;
+
+    Button btn_add;
+    Button btn_reduce;
+
+
     GoodsAdapter.OnItemClickListener listener;
     public GoodsHolder(View itemView,GoodsAdapter.OnItemClickListener listener) {
         super(itemView);
@@ -84,13 +110,28 @@ class GoodsHolder extends RecyclerView.ViewHolder implements View.OnClickListene
         tv_goodsname= (TextView) itemView.findViewById(R.id.tv_goodsname);
         tv_sale= (TextView) itemView.findViewById(R.id.tv_sale);
         tv_price= (TextView) itemView.findViewById(R.id.tv_price);
+        tv_number= (TextView) itemView.findViewById(R.id.tv_number);
         iv_goodscover= (ImageView) itemView.findViewById(R.id.iv_goodscover);
+
+        btn_add= (Button) itemView.findViewById(R.id.btn_add);
+        btn_reduce= (Button) itemView.findViewById(R.id.btn_reduce);
+        btn_reduce= (Button) itemView.findViewById(R.id.btn_reduce);
+        btn_add.setOnClickListener(this);
         this.listener=listener;
         itemView.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        listener.onItemClick(v,getPosition());
+        switch (v.getId()){
+            case R.id.btn_add:
+                Log.i("CJT","ADD Click");
+                listener.addGoodClick(getPosition());
+                break;
+            default:
+                listener.onItemClick(v,getPosition());
+                break;
+        }
+
     }
 }

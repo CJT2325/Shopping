@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.cjt.shopping.ui.acitivity.SettlementActivity"
+    tools:showIn="@layout/activity_settlement">
+
+    <RelativeLayout
+        android:layout_marginTop="6dp"
+        android:id="@+id/layout_addresss"
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="6dp"
+            android:text="陈嘉桐"
+            android:id="@+id/tv_username"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@id/tv_username"
+            android:text="18814117978"
+            android:id="@+id/tv_phone"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_below="@id/tv_username"
+            android:text="广州大学华软软件学院"
+            android:id="@+id/tv_address"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_below="@id/tv_address"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="6dp"
+        android:layout_below="@id/layout_addresss"
+        android:id="@+id/layout_pay"
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="6dp"
+            android:text="支付方式"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="6dp"
+            android:text="在线支付"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="6dp"
+        android:layout_below="@id/layout_pay"
+        android:id="@+id/layout_orderinfo"
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_shopname"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="6dp"
+            android:text="商家名称"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@id/tv_shopname"
+            android:id="@+id/rc_orderitems"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_alignParentBottom="true"
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <View
+            android:background="#888888"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:id="@+id/tv_totalprice"
+            android:layout_marginLeft="100dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="待支付￥0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_order"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="提交订单"
+            android:layout_width="120dp"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</RelativeLayout>

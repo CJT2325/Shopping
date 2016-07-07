@@ -55,15 +55,15 @@
         android:layout_marginRight="10dp"
         android:layout_alignBottom="@id/tv_price"
         android:layout_alignParentRight="true"
-        android:textSize="12sp"
+        android:textSize="16sp"
         android:text="+"
         android:layout_marginBottom="5dp"
-        android:layout_width="20dp"
-        android:layout_height="20dp" />
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
     <TextView
         android:visibility="invisible"
         android:gravity="center"
-        android:paddingBottom="2dp"
+        android:paddingBottom="6dp"
         android:text="0"
         android:textSize="18sp"
         android:layout_toLeftOf="@id/btn_add"
@@ -85,6 +85,6 @@
         android:layout_marginRight="10dp"
         android:layout_alignBottom="@id/tv_price"
         android:text="-"
-        android:layout_width="20dp"
-        android:layout_height="20dp" />
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
 </RelativeLayout>

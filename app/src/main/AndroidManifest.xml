@@ -78,6 +78,10 @@
         <activity
             android:name=".ui.acitivity.RegisterActivity"
             android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.acitivity.SettlementActivity"
+            android:label="@string/title_activity_settlement"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

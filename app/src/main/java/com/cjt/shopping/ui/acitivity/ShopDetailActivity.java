@@ -23,6 +23,7 @@ import java.util.List;
 
 public class ShopDetailActivity extends AppCompatActivity {
     private String vendorID="";
+    private String storeID="";
     private String vendorName="";
     private TabLayout tablayout_shop;
     private ViewPager vp_info;
@@ -41,6 +42,7 @@ public class ShopDetailActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         vendorID=getIntent().getStringExtra("vendorID");
+        storeID=getIntent().getStringExtra("storeID");
         vendorName=getIntent().getStringExtra("vendorName");
         getSupportActionBar().setTitle(vendorName);
         Log.i("CJT","商家ID ====="+vendorID);
@@ -53,7 +55,7 @@ public class ShopDetailActivity extends AppCompatActivity {
 
         //初始化Fragment
         list_fragment = new ArrayList<Fragment>();
-        mSelectFragment = SelectFragment.newInstance(vendorID);
+        mSelectFragment = SelectFragment.newInstance(vendorID,storeID);
         mEvaluateFragment = EvaluateFragment.newInstance();
         mShopInfoFragment = ShopInfoFragment.newInstance();
         list_fragment.add(mSelectFragment);

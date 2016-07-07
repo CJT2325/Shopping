@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="50dp"
     android:background="#FFF"
-    android:layout_marginTop="8dp"
+    android:layout_marginTop="2dp"
     android:elevation="1dp">
     <TextView
         android:layout_centerVertical="true"

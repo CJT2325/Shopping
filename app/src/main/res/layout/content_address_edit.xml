@@ -33,40 +33,14 @@
             android:textSize="18sp" />
 
         <EditText
+            android:id="@+id/et_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/tv_name" />
 
-        <RadioGroup
-            android:id="@+id/rg_sex"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv_name"
-            android:layout_margin="6dp"
-            android:layout_toRightOf="@id/tv_name">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:id="@+id/rb_man"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="先生" />
-
-                <RadioButton
-                    android:id="@+id/tv_woman"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:text="女士" />
-            </LinearLayout>
-        </RadioGroup>
 
         <TextView
-            android:layout_below="@id/rg_sex"
+            android:layout_below="@id/et_name"
             android:id="@+id/tv_phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -75,7 +49,8 @@
             android:textSize="18sp" />
 
         <EditText
-            android:layout_below="@id/rg_sex"
+            android:id="@+id/et_phone"
+            android:layout_below="@id/et_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/tv_name" />
@@ -107,11 +82,17 @@
                 android:layout_margin="6dp"
                 android:text="小区/大厦/学校："
                 android:textSize="18sp" />
-            <TextView
-                android:id="@+id/tv_getaddress"
+            <ImageView
+                android:id="@+id/iv_location"
+                android:layout_alignBottom="@id/tv_mainaddress"
                 android:layout_toRightOf="@id/tv_mainaddress"
-                android:drawableLeft="@drawable/ic_my_location_black_24dp"
-                android:layout_width="wrap_content"
+                android:src="@drawable/ic_my_location_black_24dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <EditText
+                android:id="@+id/et_getaddress"
+                android:layout_toRightOf="@id/iv_location"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </RelativeLayout>
         <TextView
@@ -124,6 +105,7 @@
             android:textSize="18sp" />
 
         <EditText
+            android:id="@+id/et_number"
             android:layout_below="@id/layout_mainaddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

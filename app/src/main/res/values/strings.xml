@@ -102,4 +102,5 @@
     <string name="title_activity_good_detail">GoodDetailActivity</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_settlement">SettlementActivity</string>
 </resources>

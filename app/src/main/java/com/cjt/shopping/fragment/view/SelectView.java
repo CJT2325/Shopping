@@ -13,4 +13,12 @@ public interface SelectView {
     public void updata(List<ShopInfo.CategoriesBean> categoriesList,List<ShopInfo.GoodsBean> goodsList);
 
     public void updataShopCart(List<ShopCartList.ShopCartBean.ShopCartItemsBean> shopCartItems);
+
+    public void addGoodSuccess();
+
+    public void addGoodFail();
+
+    public void updataTotalPrice(double price);
+
+    public void goToSettlement(int orderId);
 }

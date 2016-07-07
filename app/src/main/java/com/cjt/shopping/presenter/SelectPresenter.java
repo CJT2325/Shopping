@@ -2,6 +2,8 @@ package com.cjt.shopping.presenter;
 
 import android.util.Log;
 
+import com.cjt.shopping.bean.AddGoodResult;
+import com.cjt.shopping.bean.Order;
 import com.cjt.shopping.bean.ShopCartList;
 import com.cjt.shopping.bean.ShopInfo;
 import com.cjt.shopping.fragment.SelectFragment;
@@ -12,6 +14,7 @@ import com.cjt.shopping.model.Imodel.ShopInfoModel;
 import com.cjt.shopping.model.SelectModelImpl;
 import com.cjt.shopping.model.ShopInfoModelImpl;
 
+import retrofit2.Call;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
 import rx.schedulers.Schedulers;
@@ -64,9 +67,54 @@ public class SelectPresenter extends BasePresenter<SelectFragment>{
                             if (shopCartList.getShopCart().getShopCartItems()!=null){
                                 Log.i("CJT", "购物车数量"+shopCartList.getShopCart().getShopCartItems().size());
                                 mSelectView.updataShopCart(shopCartList.getShopCart().getShopCartItems());
+                                mSelectView.updataTotalPrice(shopCartList.getShopCart().getTotalPrice());
                             }
+                        }
+                    }, new Action1<Throwable>() {
+                        @Override
+                        public void call(Throwable throwable) {
+                            Log.i("RxJava", "又是在这里出现了问题呀----->" + throwable.toString());
+                        }
+                    });
+        }else{
+            Log.i("CJT","model is null");
+        }
+    }
 
+    //添加商品到购物车
+    public void addGoodToShopCart(String goodId,String userId){
+        if (mSelectModel!=null) {
+            mSelectModel.addGoosToShopCart(goodId,userId)
+                    .subscribeOn(Schedulers.newThread())
+                    .observeOn(AndroidSchedulers.mainThread())
+                    .subscribe(new Action1<AddGoodResult>() {
+                        @Override
+                        public void call(AddGoodResult mAddGoodResult) {
+                            Log.i("CJT","添加成功");
+                            mSelectView.addGoodSuccess();
+                        }
+                    }, new Action1<Throwable>() {
+                        @Override
+                        public void call(Throwable throwable) {
+                            Log.i("RxJava", "又是在这里出现了问题呀----->" + throwable.toString());
+                            mSelectView.addGoodFail();
+                        }
+                    });
+        }else{
+            Log.i("CJT","model is null");
+        }
+    }
 
+    public void addToOrder(String id, String userId) {
+        if (mSelectModel!=null) {
+            mSelectModel.addToOrder(id,userId)
+                    .subscribeOn(Schedulers.newThread())
+                    .observeOn(AndroidSchedulers.mainThread())
+                    .subscribe(new Action1<Order>() {
+                        @Override
+                        public void call(Order order) {
+                            Log.i("CJT",order.getOrders().get(0).getId()+" ========");
+                            mSelectView.goToSettlement(order.getOrders().get(0).getId());
                         }
                     }, new Action1<Throwable>() {
                         @Override

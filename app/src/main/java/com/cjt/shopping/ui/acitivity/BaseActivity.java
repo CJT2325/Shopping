@@ -5,7 +5,10 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
+import com.cjt.shopping.bean.ShopCartList;
 import com.cjt.shopping.presenter.BasePresenter;
+
+import java.util.List;
 
 /**
  * 作者: 陈嘉桐 on 2016/7/1
@@ -56,4 +59,5 @@ public abstract class BaseActivity<V,T extends BasePresenter<V>> extends AppComp
     }
 
     protected abstract T creatPresenter();
+
 }

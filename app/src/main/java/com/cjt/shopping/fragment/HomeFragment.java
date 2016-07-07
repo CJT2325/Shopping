@@ -63,8 +63,9 @@ public class HomeFragment extends BaseFragment<HomeFragment,HomePresenter> imple
             @Override
             public void onItemClick(View view, int position) {
                 Intent intent=new Intent(getActivity(), ShopDetailActivity.class);
-                Log.i("CJT","获取商家ID"+mDatas.get(position).getId());
+                Log.i("CJT","获取商家ID"+mDatas.get(position).getStore().getId());
                 intent.putExtra("vendorID",mDatas.get(position).getId()+"");
+                intent.putExtra("storeID",mDatas.get(position).getStore().getId()+"");
                 intent.putExtra("vendorName",mDatas.get(position).getStore().getName());
                 startActivity(intent);
                 Log.i("CJT","Item click");

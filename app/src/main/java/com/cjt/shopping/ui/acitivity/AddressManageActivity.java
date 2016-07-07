@@ -1,5 +1,6 @@
 package com.cjt.shopping.ui.acitivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,21 +9,33 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.support.v7.widget.helper.ItemTouchHelper;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.cjt.shopping.R;
 import com.cjt.shopping.adapter.AddressAdapter;
+import com.cjt.shopping.bean.AddressList;
+import com.cjt.shopping.presenter.AddressManagePresenter;
+import com.cjt.shopping.ui.view.AddressEditView;
+import com.cjt.shopping.ui.view.AddressManageView;
+import com.cjt.shopping.util.Config;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class AddressManageActivity extends AppCompatActivity {
+public class AddressManageActivity extends BaseActivity<AddressManageActivity,AddressManagePresenter> implements AddressManageView,View.OnClickListener {
+    private String orderId="";
+    private int addressPositon=-1;
     private RecyclerView mRecyclerView;
     private AddressAdapter mAddressAdapter;
-    private List<String> mDatas;
+    private List<AddressList.UserBean.MyAddressesBean> mDatas;
     ItemTouchHelper mItemTouchHelper;
+
+    TextView tv_addaddress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,21 +45,54 @@ public class AddressManageActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        orderId=getIntent().getStringExtra("orderId");
+        Log.i("CJT","==="+orderId);
+
         mRecyclerView = (RecyclerView) findViewById(R.id.rv_addresslist);
         initDatas();
-        mAddressAdapter = new AddressAdapter(mDatas, this);
+        mAddressAdapter = new AddressAdapter(mDatas, this, new AddressAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+//                Intent intent=new Intent();
+//                intent.putExtra("AddressId",mDatas.get(position).getId());
+//                setResult(1234,intent);
+//                finish();
+                Log.i("CJT","AddressId="+mDatas.get(position).getId());
+                if (orderId!=null) {
+                    addressPositon=position;
+                    getPresenter().subAddress(mDatas.get(position).getId() + "", Config.getUserId(AddressManageActivity.this), orderId);
+                }
+//                mDatas.get(position).getId();
+            }
+        });
         SimpleItemTouchHelperCallback callback=new SimpleItemTouchHelperCallback(mAddressAdapter);
         mRecyclerView.setAdapter(mAddressAdapter);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         mItemTouchHelper = new ItemTouchHelper(callback);
-       // mItemTouchHelper.attachToRecyclerView(mRecyclerView);
+
+        tv_addaddress= (TextView) findViewById(R.id.tv_addaddress);
+        tv_addaddress.setOnClickListener(this);
+        // mItemTouchHelper.attachToRecyclerView(mRecyclerView);
+    }
+
+    @Override
+    protected AddressManagePresenter creatPresenter() {
+        return new AddressManagePresenter();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if (!"".equals(Config.getUserId(this))) {
+            getPresenter().getAddress(Config.getUserId(this));
+        }else {
+            Toast.makeText(this,"未登录",Toast.LENGTH_SHORT).show();
+        }
     }
 
     private void initDatas() {
-        mDatas = new ArrayList<String>();
-        for (int i = 0; i < 2; i++) {
-            mDatas.add("Stirng " + i);
-        }
+        mDatas = new ArrayList<AddressList.UserBean.MyAddressesBean>();
     }
 
     @Override
@@ -71,6 +117,38 @@ public class AddressManageActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+
+    @Override
+    public void getAddressSuccess(List<AddressList.UserBean.MyAddressesBean> myAddresses) {
+        this.mDatas.clear();
+        this.mDatas=myAddresses;
+        this.mAddressAdapter.updata(myAddresses);
+    }
+
+    @Override
+    public void getAddressFail() {
+
+    }
+
+    @Override
+    public void subAddressSuccess() {
+        Intent intent=new Intent();
+        intent.putExtra("userName",mDatas.get(addressPositon).getConsignee());
+        intent.putExtra("userPhone",mDatas.get(addressPositon).getPhone());
+        intent.putExtra("userPath",mDatas.get(addressPositon).getPath());
+        setResult(1234,intent);
+        finish();
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.tv_addaddress:
+                startActivity(new Intent(this, AddressEditActivity.class));
+                break;
+        }
     }
 
 

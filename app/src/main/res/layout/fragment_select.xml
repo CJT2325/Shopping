@@ -22,6 +22,7 @@
             android:layout_width="50dp"
             android:layout_height="match_parent" />
         <TextView
+            android:id="@+id/tv_totalprice"
             android:layout_marginLeft="100dp"
             android:textSize="18sp"
             android:gravity="center"
@@ -29,6 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent" />
         <TextView
+            android:id="@+id/tv_order"
             android:textColor="#FFFFFF"
             android:layout_alignParentRight="true"
             android:textSize="18sp"
