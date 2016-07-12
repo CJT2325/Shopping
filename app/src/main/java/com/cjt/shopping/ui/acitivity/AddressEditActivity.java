@@ -61,6 +61,8 @@ public class AddressEditActivity extends BaseActivity<AddressEditActivity,Addres
         getMenuInflater().inflate(R.menu.menu_address_edit, menu);
         return true;
     }
+
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -85,7 +87,11 @@ public class AddressEditActivity extends BaseActivity<AddressEditActivity,Addres
             }
             return true;
         }
-
+        if(item.getItemId() == android.R.id.home)
+        {
+            finish();
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 

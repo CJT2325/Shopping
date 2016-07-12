@@ -57,9 +57,16 @@ public class LoginActivity extends BaseActivity<LoginActivity, LoginPresenter> i
             startActivity(new Intent(this,RegisterActivity.class));
             return true;
         }
-
+        if(item.getItemId() == android.R.id.home)
+        {
+            finish();
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
+
+
+
     @Override
     protected LoginPresenter creatPresenter() {
         return new LoginPresenter();
@@ -90,6 +97,8 @@ public class LoginActivity extends BaseActivity<LoginActivity, LoginPresenter> i
         Toast.makeText(this,"Loing Fail",Toast.LENGTH_SHORT).show();
         hideProgress();
     }
+
+
 
     @Override
     public void onClick(View v) {

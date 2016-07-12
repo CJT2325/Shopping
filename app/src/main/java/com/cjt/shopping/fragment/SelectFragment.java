@@ -44,6 +44,7 @@ public class SelectFragment extends BaseFragment<SelectFragment,SelectPresenter>
     private ShopCartAdapter mShopCartAdapter;
     private List<ShopInfo.CategoriesBean> mDatasCategoriesBean;
     private List<ShopInfo.GoodsBean> mDatasGoodsBean;
+
     private List<ShopCartList.ShopCartBean.ShopCartItemsBean> mShopCartItemBean;
 
     private PopupWindow mPopupWindow;
@@ -113,6 +114,21 @@ public class SelectFragment extends BaseFragment<SelectFragment,SelectPresenter>
                     Toast.makeText(SelectFragment.this.getActivity(),"未登录",Toast.LENGTH_SHORT).show();
                 }
             }
+
+            @Override
+            public void reduceGoodeClic(int position, String number) {
+                if (!Config.getUserId(SelectFragment.this.getContext()).equals("")) {
+                    if (!number.equals("0")) {
+                        getPresenter().reduceGoodToShopCart((Integer.parseInt(number)-1)+"",mDatasGoodsBean.get(position).getId() + "",Config.getUserId(SelectFragment.this.getContext()));
+                        Log.i("CJT", mDatasGoodsBean.get(position).getId() + "===" + Config.getUserId(SelectFragment.this.getContext()));
+                    }else{
+                        Toast.makeText(SelectFragment.this.getActivity(),"数量为0",Toast.LENGTH_SHORT).show();
+                    }
+                }else{
+                    Toast.makeText(SelectFragment.this.getActivity(),"未登录",Toast.LENGTH_SHORT).show();
+                }
+            }
+
         });
         mShopCartAdapter=new ShopCartAdapter(mShopCartItemBean,getActivity());
 

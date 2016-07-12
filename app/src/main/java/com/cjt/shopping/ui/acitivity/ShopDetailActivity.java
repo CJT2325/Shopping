@@ -10,6 +10,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 
 import com.cjt.shopping.R;
@@ -76,6 +77,18 @@ public class ShopDetailActivity extends AppCompatActivity {
         mFragmentPagerAdapter = new ShopTabAdapter(getSupportFragmentManager(), list_fragment, list_title);
         vp_info.setAdapter(mFragmentPagerAdapter);
         tablayout_shop.setupWithViewPager(vp_info);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        // TODO Auto-generated method stub
+        if(item.getItemId() == android.R.id.home)
+        {
+            finish();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 }

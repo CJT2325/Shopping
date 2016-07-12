@@ -22,7 +22,7 @@ public interface SelectModel {
     //添加商品
     public Observable<AddGoodResult> addGoosToShopCart(String goodId, String userId);
 
-    //添加商品
+    //移出商品
     public Observable<AddGoodResult> modGoosToShopCart(String count,String goodId, String userId);
 
     //生成订单

@@ -13,53 +13,34 @@
         android:id="@+id/tv_goodsname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-    <Button
-        android:gravity="center"
-        android:textStyle="bold"
-        android:id="@+id/btn_add"
-        android:background="@drawable/btn_cir"
-        android:textColor="#FFF"
-        android:layout_marginRight="10dp"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:textSize="12sp"
-        android:text="+"
-        android:layout_marginBottom="5dp"
-        android:layout_width="20dp"
-        android:layout_height="20dp" />
+
     <TextView
         android:gravity="center"
         android:paddingBottom="2dp"
         android:text="0"
         android:textSize="18sp"
-        android:layout_toLeftOf="@id/btn_add"
+        android:layout_alignParentRight="true"
         android:id="@+id/tv_number"
         android:layout_marginBottom="2dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginRight="20dp"
         android:layout_centerVertical="true"
         android:layout_width="15dp"
         android:layout_height="wrap_content" />
-    <Button
-        android:textStyle="bold"
-        android:textSize="12sp"
-        android:layout_toLeftOf="@id/tv_number"
-        android:id="@+id/btn_reduce"
-        android:background="@drawable/btn_cir"
-        android:textColor="#FFF"
-        android:layout_marginBottom="5dp"
-        android:layout_marginRight="10dp"
-        android:layout_centerVertical="true"
-        android:text="-"
-        android:layout_width="20dp"
-        android:layout_height="20dp" />
+
 
     <TextView
+        android:textColor="#FF0000"
         android:layout_marginRight="30dp"
         android:layout_centerVertical="true"
         android:textSize="20sp"
         android:text="￥10"
-        android:layout_toLeftOf="@id/btn_reduce"
+        android:layout_centerInParent="true"
         android:id="@+id/tv_allprice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_alignParentRight="true"
+        android:layout_width="4dp"
+        android:layout_height="match_parent"/>
 </RelativeLayout>

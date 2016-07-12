@@ -128,7 +128,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (id == R.id.action_seacher) {
             return true;
         }
-
+        if(item.getItemId() == android.R.id.home)
+        {
+            finish();
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -148,4 +152,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onActivityResult(requestCode, resultCode, data);
         tv_address.setText(data.getStringExtra("Address"));
     }
+
+
 }

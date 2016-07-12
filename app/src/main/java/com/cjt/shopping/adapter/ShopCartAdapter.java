@@ -54,15 +54,11 @@ class ShopCartHolder extends RecyclerView.ViewHolder implements View.OnClickList
     TextView tv_goodsname;
     TextView tv_allprice;
     TextView tv_number;
-    Button btn_reduce;
-    Button btn_add;
     public ShopCartHolder(View itemView) {
         super(itemView);
         tv_goodsname= (TextView) itemView.findViewById(R.id.tv_goodsname);
         tv_allprice= (TextView) itemView.findViewById(R.id.tv_allprice);
         tv_number= (TextView) itemView.findViewById(R.id.tv_number);
-        btn_reduce= (Button) itemView.findViewById(R.id.btn_reduce);
-        btn_add= (Button) itemView.findViewById(R.id.btn_add);
     }
 
     @Override

@@ -105,6 +105,31 @@ public class SelectPresenter extends BasePresenter<SelectFragment>{
         }
     }
 
+    //添加商品到购物车
+    public void reduceGoodToShopCart(String count,String goodId,String userId){
+        if (mSelectModel!=null) {
+            mSelectModel.modGoosToShopCart(count,goodId,userId)
+                    .subscribeOn(Schedulers.newThread())
+                    .observeOn(AndroidSchedulers.mainThread())
+                    .subscribe(new Action1<AddGoodResult>() {
+                        @Override
+                        public void call(AddGoodResult mAddGoodResult) {
+                            Log.i("CJT","移出成功");
+                            mSelectView.addGoodSuccess();
+                        }
+                    }, new Action1<Throwable>() {
+                        @Override
+                        public void call(Throwable throwable) {
+                            Log.i("RxJava", "又是在这里出现了问题呀----->" + throwable.toString());
+                            mSelectView.addGoodFail();
+                        }
+                    });
+        }else{
+            Log.i("CJT","model is null");
+        }
+    }
+
+
     public void addToOrder(String id, String userId) {
         if (mSelectModel!=null) {
             mSelectModel.addToOrder(id,userId)

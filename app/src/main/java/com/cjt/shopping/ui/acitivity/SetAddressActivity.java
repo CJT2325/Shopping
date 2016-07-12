@@ -139,6 +139,11 @@ public class SetAddressActivity extends AppCompatActivity implements View.OnClic
         if (id == R.id.action_seacher) {
             return true;
         }
+        if(item.getItemId() == android.R.id.home)
+        {
+            finish();
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 
